@@ -1,0 +1,154 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AE3E98DB-35C1-42D8-AB6D-DE37189DDAA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D26002E-3D0A-47FC-A1F7-BC56D11EC5BF}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{9340B0E0-D3D9-4917-B0AA-093A95183265}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{8941C48B-849B-4625-B5F8-0EF567135BC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{988F2F26-89C2-4C44-B1BB-42C394832A4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{04CCC7F8-8AF7-4965-B2EF-2E28331BE421}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{DCCD4FD6-B437-4586-B932-7AC40EF86A71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{68258835-A222-468B-84F5-441AD58BCD51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palestras.UI.Site", "src\Palestras.UI.Site\Palestras.UI.Site.csproj", "{E38E811D-9A10-41EF-A245-907A71C79ACB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palestras.Domain", "src\Palestras.Domain\Palestras.Domain.csproj", "{906E381B-85D8-4AEC-9DD0-48F4117FDD9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palestras.Application", "src\Palestras.Application\Palestras.Application.csproj", "{8EA27390-8455-48EA-ABCB-881272BCE68A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palestras.Infra.Data", "src\Palestras.Infra.Data\Palestras.Infra.Data.csproj", "{3701E4D6-A057-49F4-9872-2CAD0487452C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palestras.Infra.CrossCutting.Identity", "src\Palestras.Infra.CrossCutting.Identity\Palestras.Infra.CrossCutting.Identity.csproj", "{37C44A01-20FE-4B09-8435-47164F08C0C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palestras.Infra.CrossCutting.IoC", "src\Palestras.Infra.CrossCutting.IoC\Palestras.Infra.CrossCutting.IoC.csproj", "{9330566C-4093-4FC7-AF61-14850DD15793}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palestras.Domain.Core", "src\Palestras.Domain.Core\Palestras.Domain.Core.csproj", "{A9CB4A5C-DCF4-4F87-83C2-2D6A34C6E2BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palestras.Infra.CrossCutting.Bus", "src\Palestras.Infra.CrossCutting.Bus\Palestras.Infra.CrossCutting.Bus.csproj", "{7C9495CE-AEC5-44CB-9D9C-1150DF99F817}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palestras.WebApi", "src\Palestras.WebApi\Palestras.WebApi.csproj", "{918C9F92-CA9C-4481-9AFA-8DD5A1A810D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{A5EBFB52-C5C5-4F98-B441-E48DA9CA5744}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E38E811D-9A10-41EF-A245-907A71C79ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E38E811D-9A10-41EF-A245-907A71C79ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E38E811D-9A10-41EF-A245-907A71C79ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E38E811D-9A10-41EF-A245-907A71C79ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{906E381B-85D8-4AEC-9DD0-48F4117FDD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906E381B-85D8-4AEC-9DD0-48F4117FDD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906E381B-85D8-4AEC-9DD0-48F4117FDD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{906E381B-85D8-4AEC-9DD0-48F4117FDD9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA27390-8455-48EA-ABCB-881272BCE68A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA27390-8455-48EA-ABCB-881272BCE68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA27390-8455-48EA-ABCB-881272BCE68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA27390-8455-48EA-ABCB-881272BCE68A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3701E4D6-A057-49F4-9872-2CAD0487452C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3701E4D6-A057-49F4-9872-2CAD0487452C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3701E4D6-A057-49F4-9872-2CAD0487452C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3701E4D6-A057-49F4-9872-2CAD0487452C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37C44A01-20FE-4B09-8435-47164F08C0C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C44A01-20FE-4B09-8435-47164F08C0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C44A01-20FE-4B09-8435-47164F08C0C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C44A01-20FE-4B09-8435-47164F08C0C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9330566C-4093-4FC7-AF61-14850DD15793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9330566C-4093-4FC7-AF61-14850DD15793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9330566C-4093-4FC7-AF61-14850DD15793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9330566C-4093-4FC7-AF61-14850DD15793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9CB4A5C-DCF4-4F87-83C2-2D6A34C6E2BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CB4A5C-DCF4-4F87-83C2-2D6A34C6E2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CB4A5C-DCF4-4F87-83C2-2D6A34C6E2BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9CB4A5C-DCF4-4F87-83C2-2D6A34C6E2BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9495CE-AEC5-44CB-9D9C-1150DF99F817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9495CE-AEC5-44CB-9D9C-1150DF99F817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9495CE-AEC5-44CB-9D9C-1150DF99F817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9495CE-AEC5-44CB-9D9C-1150DF99F817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{918C9F92-CA9C-4481-9AFA-8DD5A1A810D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918C9F92-CA9C-4481-9AFA-8DD5A1A810D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918C9F92-CA9C-4481-9AFA-8DD5A1A810D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918C9F92-CA9C-4481-9AFA-8DD5A1A810D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9340B0E0-D3D9-4917-B0AA-093A95183265} = {AE3E98DB-35C1-42D8-AB6D-DE37189DDAA1}
+		{8941C48B-849B-4625-B5F8-0EF567135BC0} = {AE3E98DB-35C1-42D8-AB6D-DE37189DDAA1}
+		{988F2F26-89C2-4C44-B1BB-42C394832A4E} = {AE3E98DB-35C1-42D8-AB6D-DE37189DDAA1}
+		{04CCC7F8-8AF7-4965-B2EF-2E28331BE421} = {AE3E98DB-35C1-42D8-AB6D-DE37189DDAA1}
+		{DCCD4FD6-B437-4586-B932-7AC40EF86A71} = {04CCC7F8-8AF7-4965-B2EF-2E28331BE421}
+		{68258835-A222-468B-84F5-441AD58BCD51} = {04CCC7F8-8AF7-4965-B2EF-2E28331BE421}
+		{E38E811D-9A10-41EF-A245-907A71C79ACB} = {9340B0E0-D3D9-4917-B0AA-093A95183265}
+		{906E381B-85D8-4AEC-9DD0-48F4117FDD9D} = {988F2F26-89C2-4C44-B1BB-42C394832A4E}
+		{8EA27390-8455-48EA-ABCB-881272BCE68A} = {8941C48B-849B-4625-B5F8-0EF567135BC0}
+		{3701E4D6-A057-49F4-9872-2CAD0487452C} = {DCCD4FD6-B437-4586-B932-7AC40EF86A71}
+		{37C44A01-20FE-4B09-8435-47164F08C0C8} = {68258835-A222-468B-84F5-441AD58BCD51}
+		{9330566C-4093-4FC7-AF61-14850DD15793} = {68258835-A222-468B-84F5-441AD58BCD51}
+		{A9CB4A5C-DCF4-4F87-83C2-2D6A34C6E2BA} = {988F2F26-89C2-4C44-B1BB-42C394832A4E}
+		{7C9495CE-AEC5-44CB-9D9C-1150DF99F817} = {68258835-A222-468B-84F5-441AD58BCD51}
+		{918C9F92-CA9C-4481-9AFA-8DD5A1A810D3} = {A5EBFB52-C5C5-4F98-B441-E48DA9CA5744}
+		{A5EBFB52-C5C5-4F98-B441-E48DA9CA5744} = {AE3E98DB-35C1-42D8-AB6D-DE37189DDAA1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC84AC82-7254-4657-BF73-C6194F1F5DDF}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ajalaoliveira.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\Palestras.UI.Site\\Palestras.UI.Site.csproj
+		SccProjectTopLevelParentUniqueName1 = Palestras.sln
+		SccProjectName1 = src/Palestras.UI.Site
+		SccLocalPath1 = src\\Palestras.UI.Site
+		SccProjectUniqueName2 = src\\Palestras.Domain\\Palestras.Domain.csproj
+		SccProjectTopLevelParentUniqueName2 = Palestras.sln
+		SccProjectName2 = src/Palestras.Domain
+		SccLocalPath2 = src\\Palestras.Domain
+		SccProjectUniqueName3 = src\\Palestras.Application\\Palestras.Application.csproj
+		SccProjectTopLevelParentUniqueName3 = Palestras.sln
+		SccProjectName3 = src/Palestras.Application
+		SccLocalPath3 = src\\Palestras.Application
+		SccProjectUniqueName4 = src\\Palestras.Infra.Data\\Palestras.Infra.Data.csproj
+		SccProjectTopLevelParentUniqueName4 = Palestras.sln
+		SccProjectName4 = src/Palestras.Infra.Data
+		SccLocalPath4 = src\\Palestras.Infra.Data
+		SccProjectUniqueName5 = src\\Palestras.Infra.CrossCutting.Identity\\Palestras.Infra.CrossCutting.Identity.csproj
+		SccProjectTopLevelParentUniqueName5 = Palestras.sln
+		SccProjectName5 = src/Palestras.Infra.CrossCutting.Identity
+		SccLocalPath5 = src\\Palestras.Infra.CrossCutting.Identity
+		SccProjectUniqueName6 = src\\Palestras.Infra.CrossCutting.IoC\\Palestras.Infra.CrossCutting.IoC.csproj
+		SccProjectTopLevelParentUniqueName6 = Palestras.sln
+		SccProjectName6 = src/Palestras.Infra.CrossCutting.IoC
+		SccLocalPath6 = src\\Palestras.Infra.CrossCutting.IoC
+		SccProjectUniqueName7 = src\\Palestras.Domain.Core\\Palestras.Domain.Core.csproj
+		SccProjectTopLevelParentUniqueName7 = Palestras.sln
+		SccProjectName7 = src/Palestras.Domain.Core
+		SccLocalPath7 = src\\Palestras.Domain.Core
+		SccProjectUniqueName8 = src\\Palestras.Infra.CrossCutting.Bus\\Palestras.Infra.CrossCutting.Bus.csproj
+		SccProjectTopLevelParentUniqueName8 = Palestras.sln
+		SccProjectName8 = src/Palestras.Infra.CrossCutting.Bus
+		SccLocalPath8 = src\\Palestras.Infra.CrossCutting.Bus
+		SccProjectUniqueName9 = src\\Palestras.WebApi\\Palestras.WebApi.csproj
+		SccProjectTopLevelParentUniqueName9 = Palestras.sln
+		SccProjectName9 = src/Palestras.WebApi
+		SccLocalPath9 = src\\Palestras.WebApi
+	EndGlobalSection
+EndGlobal
