@@ -1,0 +1,14 @@
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\bin\Debug\netcoreapp2.0\Palestras.Domain.deps.json
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\bin\Debug\netcoreapp2.0\Palestras.Domain.dll
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\bin\Debug\netcoreapp2.0\Palestras.Domain.pdb
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\bin\Debug\netcoreapp2.0\Palestras.Domain.Core.dll
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\bin\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Bus.dll
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\bin\Debug\netcoreapp2.0\Palestras.Domain.Core.pdb
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\bin\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Bus.pdb
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\obj\Debug\netcoreapp2.0\Palestras.Domain.csprojAssemblyReference.cache
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\obj\Debug\netcoreapp2.0\Palestras.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\obj\Debug\netcoreapp2.0\Palestras.Domain.AssemblyInfoInputs.cache
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\obj\Debug\netcoreapp2.0\Palestras.Domain.AssemblyInfo.cs
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\obj\Debug\netcoreapp2.0\Palestras.Domain.csproj.CopyComplete
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\obj\Debug\netcoreapp2.0\Palestras.Domain.dll
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain\obj\Debug\netcoreapp2.0\Palestras.Domain.pdb
