@@ -5,12 +5,14 @@ USE DATABASE FIRST:
 
 Project: 
 * Palestras.Infra.CrossCutting.Identity
+
 Commands: 
 * add-migration -Context IdentityDbContext Initial.
 * update-database -Context IdentityDbContext
 
 Project: 
 * Palestras.Infra.CrossCutting.Identity
+
 Commands: 
 * add-migration -Context PalestrasDbContext Initial
 * update-database -Context PalestrasDbContext
