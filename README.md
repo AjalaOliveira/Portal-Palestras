@@ -24,8 +24,16 @@ DATA SOURCE - SQL: (localdb)\mssqllocaldb
 
 DATABASE: Palestras
 
-For use another DATA SOURCE is necessary change it on following files:
+For use another DATA SOURCE it's necessary change it on following files:
   * Palestras.UI.Site\appsettings.json
   * Palestras.WebApi\appsettings.json
   * Palestras.Infra.Data\appsettings.json
   * Palestras.Infra.CrossCutting.Identity\appsettings.json
+  
+After register a new User it's neccessary to define some CLAIMS in dbo.AspNetUserClaims Table:
+  * CanWritePalestranteData => ClaimsType:Palestrantes - Value: Write
+  * CanRemovePalestranteData => ClaimsType:Palestrantes - Value: Remove
+  * CanWritePalestraData => ClaimsType:Palestras - Value: Write
+  * CanRemovePalestraData => ClaimsType:Palestras - Value: Remove
+
+
