@@ -1,6 +1,7 @@
 # Portal-Palestras
 
  *** MIGRATION ***
+ 
 USE DATABASE FIRST:
 
 Project: 
