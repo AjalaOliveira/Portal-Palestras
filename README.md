@@ -3,19 +3,19 @@
  *** MIGRATION ***
 USE DATABASE FIRST:
 
-- Project: 
--- Palestras.Infra.CrossCutting.Identity
-- Commands: 
--- add-migration -Context IdentityDbContext Initial
--- update-database -Context IdentityDbContext
+Project: 
+Palestras.Infra.CrossCutting.Identity
+Commands: 
+add-migration -Context IdentityDbContext Initial.
+update-database -Context IdentityDbContext
 
-- Project: 
--- Palestras.Infra.CrossCutting.Identity
-- Commands: 
--- add-migration -Context PalestrasDbContext Initial
--- update-database -Context PalestrasDbContext
--- add-migration -Context EventStoreSQLContext Initial
--- update-database -Context EventStoreSQLContext
+Project: 
+Palestras.Infra.CrossCutting.Identity
+Commands: 
+add-migration -Context PalestrasDbContext Initial
+update-database -Context PalestrasDbContext
+add-migration -Context EventStoreSQLContext Initial
+update-database -Context EventStoreSQLContext
 
 DATA SOURCE - SQL: (localdb)\mssqllocaldb
 DATABASE: Palestras
