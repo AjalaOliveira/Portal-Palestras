@@ -20,6 +20,7 @@ Commands:
 * update-database -Context EventStoreSQLContext
 
 DATA SOURCE - SQL: (localdb)\mssqllocaldb
+
 DATABASE: Palestras
 
 For use another DATA SOURCE is necessary change it on following files:
