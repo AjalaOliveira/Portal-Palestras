@@ -5,13 +5,13 @@ USE DATABASE FIRST:
 
 * Project: 
 Palestras.Infra.CrossCutting.Identity
-Commands: 
+* Commands: 
 add-migration -Context IdentityDbContext Initial.
 update-database -Context IdentityDbContext
 
 * Project: 
 Palestras.Infra.CrossCutting.Identity
-Commands: 
+* Commands: 
 add-migration -Context PalestrasDbContext Initial
 update-database -Context PalestrasDbContext
 add-migration -Context EventStoreSQLContext Initial
@@ -21,7 +21,7 @@ DATA SOURCE - SQL: (localdb)\mssqllocaldb
 DATABASE: Palestras
 
 For use another DATA SOURCE is necessary change it on following files:
-  --Palestras.UI.Site\appsettings.json
-  --Palestras.WebApi\appsettings.json
-  --Palestras.Infra.Data\appsettings.json
-  --Palestras.Infra.CrossCutting.Identity\appsettings.json
+  * Palestras.UI.Site\appsettings.json
+  * Palestras.WebApi\appsettings.json
+  * Palestras.Infra.Data\appsettings.json
+  * Palestras.Infra.CrossCutting.Identity\appsettings.json
