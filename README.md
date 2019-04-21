@@ -12,7 +12,7 @@ Commands:
 * update-database -Context IdentityDbContext
 
 Project: 
-* Palestras.Infra.CrossCutting.Identity
+* Palestras.Infra.Data
 
 Commands: 
 * add-migration -Context PalestrasDbContext Initial
