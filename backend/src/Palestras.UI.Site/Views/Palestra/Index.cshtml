@@ -106,7 +106,7 @@
                 }).done(function(data) {
                     var formatHtml = "<table class='table table-striped'>";
                     formatHtml +=
-                        "<thead><th>A��o</th><th>Quando</th><th>Id</th><th>Nome</th><th>E-mail</th><th>Nascimento</th><th>Usu�rio</th></thead>";
+                        "<thead><th>Ação</th><th>Quando</th><th>Id</th><th>Nome</th><th>E-mail</th><th>Nascimento</th><th>Usuário</th></thead>";
 
                     for (var i = 0; i < data.length; i++) {
                         var change = data[i];
@@ -114,7 +114,7 @@
                         formatHtml += "<td>" + change.action + "</td>";
                         formatHtml += "<td>" + change.when + "</td>";
                         formatHtml += "<td>" + change.id + "</td>";
-                        formatHtml += "<td>" + change.name + "</td>";
+                        formatHtml += "<td>" + change.titulo + "</td>";
                         formatHtml += "<td>" + change.email + "</td>";
                         formatHtml += "<td>" + change.birthDate + "</td>";
                         formatHtml += "<td>" + change.who + "</td>";

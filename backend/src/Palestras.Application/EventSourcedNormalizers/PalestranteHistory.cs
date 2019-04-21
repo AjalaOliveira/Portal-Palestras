@@ -26,9 +26,9 @@ namespace Palestras.Application.EventSourcedNormalizers
                     Id = change.Id == Guid.Empty.ToString() || change.Id == last.Id
                         ? ""
                         : change.Id,
-                    Name = string.IsNullOrWhiteSpace(change.Name) || change.Name == last.Name
+                    Nome = string.IsNullOrWhiteSpace(change.Nome) || change.Nome == last.Nome
                         ? ""
-                        : change.Name,
+                        : change.Nome,
                     Email = string.IsNullOrWhiteSpace(change.Email) || change.Email == last.Email
                         ? ""
                         : change.Email,
@@ -60,7 +60,7 @@ namespace Palestras.Application.EventSourcedNormalizers
                         values = JsonConvert.DeserializeObject<dynamic>(e.Data);
                         slot.BirthDate = values["BirthDate"];
                         slot.Email = values["Email"];
-                        slot.Name = values["Name"];
+                        slot.Nome = values["Nome"];
                         slot.Action = "Cadastrado";
                         slot.When = values["Timestamp"];
                         slot.Id = values["Id"];
@@ -70,7 +70,7 @@ namespace Palestras.Application.EventSourcedNormalizers
                         values = JsonConvert.DeserializeObject<dynamic>(e.Data);
                         slot.BirthDate = values["BirthDate"];
                         slot.Email = values["Email"];
-                        slot.Name = values["Name"];
+                        slot.Nome = values["Nome"];
                         slot.Action = "Atualizado";
                         slot.When = values["Timestamp"];
                         slot.Id = values["Id"];

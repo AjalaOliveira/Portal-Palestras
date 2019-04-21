@@ -1,6 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-using System;
-using System.Collections.Generic;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Palestras.Infra.Data.Migrations.EventStoreSQL
 {
@@ -13,10 +12,10 @@ namespace Palestras.Infra.Data.Migrations.EventStoreSQL
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
-                    AggregateId = table.Column<Guid>(nullable: false),
-                    Data = table.Column<string>(nullable: true),
                     Action = table.Column<string>(type: "varchar(100)", nullable: true),
+                    AggregateId = table.Column<Guid>(nullable: false),
                     CreationDate = table.Column<DateTime>(nullable: false),
+                    Data = table.Column<string>(nullable: true),
                     User = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
