@@ -2,7 +2,7 @@
 
  *** MIGRATION ***
  
-USE DATABASE FIRST:
+USE DATA BASE FIRST:
 
 Project: 
 * Palestras.Infra.CrossCutting.Identity
