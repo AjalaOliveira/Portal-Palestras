@@ -76,12 +76,12 @@ namespace Palestras.WebApi
                     {
                         Name = "Ajala Oliveira",
                         Email = "ajala_oliveira@yahoo.com.br",
-                        Url = "http://www.ajalaoliveira.net.br"
+                        Url = ""
                     },
                     License = new License
                     {
-                        Name = "MIT",
-                        Url = "https://github.com/AjalaOliveira/PalestrasProject/blob/master/LICENSE"
+                        Name = "GitHub",
+                        Url = "https://github.com/AjalaOliveira/Portal-Palestras/blob/master/README.md"
                     }
                 });
             });
