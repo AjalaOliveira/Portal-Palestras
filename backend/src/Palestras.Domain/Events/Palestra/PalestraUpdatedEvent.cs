@@ -5,10 +5,10 @@ namespace Palestras.Domain.Events.Palestra
 {
     public class PalestraUpdatedEvent : Event
     {
-        public PalestraUpdatedEvent(Guid id, string name, string email, DateTime birthDate)
+        public PalestraUpdatedEvent(Guid id, string titulo, string email, DateTime birthDate)
         {
             Id = id;
-            Name = name;
+            Titulo = titulo;
             Email = email;
             BirthDate = birthDate;
             AggregateId = id;
@@ -16,7 +16,7 @@ namespace Palestras.Domain.Events.Palestra
 
         public Guid Id { get; set; }
 
-        public string Name { get; private set; }
+        public string Titulo { get; private set; }
 
         public string Email { get; private set; }
 

@@ -11,7 +11,7 @@ namespace Palestras.Infra.Data.Mappings
             builder.Property(c => c.Id)
                 .HasColumnName("Id");
 
-            builder.Property(c => c.Name)
+            builder.Property(c => c.Titulo)
                 .HasColumnType("varchar(100)")
                 .HasMaxLength(100)
                 .IsRequired();

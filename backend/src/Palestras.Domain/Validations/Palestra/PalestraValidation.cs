@@ -6,9 +6,9 @@ namespace Palestras.Domain.Validations.Palestra
 {
     public abstract class PalestraValidation<T> : AbstractValidator<T> where T : PalestraCommand
     {
-        protected void ValidaName()
+        protected void ValidaTitulo()
         {
-            RuleFor(c => c.Name)
+            RuleFor(c => c.Titulo)
                 .NotEmpty().WithMessage("Por favor, verifique se você digitou o nome")
                 .Length(2, 150).WithMessage("O nome deve ter entre 2 e 150 caracteres");
         }

@@ -36,7 +36,7 @@ namespace Palestras.Domain.CommandHandlers
                 return Task.CompletedTask;
             }
 
-            var palestra = new Palestra(Guid.NewGuid(), message.Name, message.Email, message.BirthDate);
+            var palestra = new Palestra(Guid.NewGuid(), message.Titulo, message.Email, message.BirthDate);
 
             if (_palestraRepository.GetByEmail(palestra.Email) != null)
             {
@@ -46,7 +46,7 @@ namespace Palestras.Domain.CommandHandlers
 
             _palestraRepository.Add(palestra);
 
-            if (Commit()) Bus.RaiseEvent(new PalestraRegisteredEvent(palestra.Id, palestra.Name, palestra.Email, palestra.BirthDate));
+            if (Commit()) Bus.RaiseEvent(new PalestraRegisteredEvent(palestra.Id, palestra.Titulo, palestra.Email, palestra.BirthDate));
 
             return Task.CompletedTask;
         }
@@ -74,7 +74,7 @@ namespace Palestras.Domain.CommandHandlers
                 return Task.CompletedTask;
             }
 
-            var palestra = new Palestra(message.Id, message.Name, message.Email, message.BirthDate);
+            var palestra = new Palestra(message.Id, message.Titulo, message.Email, message.BirthDate);
             var existingPalestra = _palestraRepository.GetByEmail(palestra.Email);
 
             if (existingPalestra != null && existingPalestra.Id != palestra.Id)
@@ -86,7 +86,7 @@ namespace Palestras.Domain.CommandHandlers
 
             _palestraRepository.Update(palestra);
 
-            if (Commit()) Bus.RaiseEvent(new PalestraUpdatedEvent(palestra.Id, palestra.Name, palestra.Email, palestra.BirthDate));
+            if (Commit()) Bus.RaiseEvent(new PalestraUpdatedEvent(palestra.Id, palestra.Titulo, palestra.Email, palestra.BirthDate));
 
             return Task.CompletedTask;
         }

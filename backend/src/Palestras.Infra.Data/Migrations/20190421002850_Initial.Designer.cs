@@ -30,7 +30,7 @@ namespace Palestras.Infra.Data.Migrations
 
                     b.Property<string>("Email");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Titulo");
 
                     b.HasKey("Id");
 

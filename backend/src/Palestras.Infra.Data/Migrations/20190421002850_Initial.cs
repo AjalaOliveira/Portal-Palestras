@@ -29,7 +29,7 @@ namespace Palestras.Infra.Data.Migrations
                     Id = table.Column<Guid>(nullable: false),
                     BirthDate = table.Column<DateTime>(nullable: false),
                     Email = table.Column<string>(nullable: true),
-                    Name = table.Column<string>(nullable: true)
+                    Titulo = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

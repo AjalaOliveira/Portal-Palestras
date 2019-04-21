@@ -6,7 +6,7 @@ namespace Palestras.Domain.Validations.Palestra
     {
         public RegisterNewPalestraCommandValidation()
         {
-            ValidaName();
+            ValidaTitulo();
             ValidateBirthDate();
             ValidateEmail();
         }
