@@ -11,7 +11,7 @@ using System;
 namespace Palestras.Infra.Data.Migrations
 {
     [DbContext(typeof(PalestrasDbContext))]
-    [Migration("20190421002850_Initial")]
+    [Migration("20190421011508_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -11,7 +11,7 @@ using System;
 namespace Palestras.Infra.Data.Migrations.EventStoreSQL
 {
     [DbContext(typeof(EventStoreSQLContext))]
-    [Migration("20190421002929_Initial")]
+    [Migration("20190421011540_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
