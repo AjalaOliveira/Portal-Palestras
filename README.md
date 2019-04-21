@@ -31,7 +31,7 @@ For use another DATA SOURCE it's necessary change it on following files:
   * Palestras.Infra.CrossCutting.Identity\appsettings.json
   
 After register a new User it's neccessary to define some CLAIMS in dbo.AspNetUserClaims Table:
-  * CanWritePalestranteData => ClaimsType: Palestrantes - Value: Write
+  * CanWritePalestranteData => ClaimsType: Palestrantes - Value: Write (defined by default)
   * CanRemovePalestranteData => ClaimsType: Palestrantes - Value: Remove
   * CanWritePalestraData => ClaimsType: Palestras - Value: Write
   * CanRemovePalestraData => ClaimsType: Palestras - Value: Remove
