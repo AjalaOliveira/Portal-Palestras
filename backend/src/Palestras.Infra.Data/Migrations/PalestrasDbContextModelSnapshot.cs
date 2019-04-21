@@ -49,7 +49,7 @@ namespace Palestras.Infra.Data.Migrations
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(11);
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(100);

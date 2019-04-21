@@ -11,7 +11,7 @@ using System;
 namespace Palestras.Infra.Data.Migrations
 {
     [DbContext(typeof(PalestrasDbContext))]
-    [Migration("20190420225644_Initial")]
+    [Migration("20190421002850_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -50,7 +50,7 @@ namespace Palestras.Infra.Data.Migrations
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(11);
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(100);
