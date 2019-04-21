@@ -22,7 +22,7 @@ Commands:
 
 DATA SOURCE - SQL: (localdb)\mssqllocaldb
 
-DATABASE: Palestras
+DATA BASE: Palestras
 
 For use another DATA SOURCE it's necessary change it on following files:
   * Palestras.UI.Site\appsettings.json
