@@ -5,9 +5,9 @@ namespace Palestras.Domain.Commands.Palestrante
 {
     public class RegisterNewPalestranteCommand : PalestranteCommand
     {
-        public RegisterNewPalestranteCommand(string name, string email, DateTime birthDate)
+        public RegisterNewPalestranteCommand(string nome, string email, DateTime birthDate)
         {
-            Name = name;
+            Nome = nome;
             Email = email;
             BirthDate = birthDate;
         }

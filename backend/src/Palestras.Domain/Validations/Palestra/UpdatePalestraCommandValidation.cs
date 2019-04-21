@@ -7,7 +7,7 @@ namespace Palestras.Domain.Validations.Palestra
         public UpdatePalestraCommandValidation()
         {
             ValidateId();
-            ValidateName();
+            ValidaName();
             ValidateBirthDate();
             ValidateEmail();
         }

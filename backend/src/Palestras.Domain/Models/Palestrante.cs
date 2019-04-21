@@ -5,10 +5,10 @@ namespace Palestras.Domain.Models
 {
     public class Palestrante : Entity
     {
-        public Palestrante(Guid id, string name, string email, DateTime birthDate)
+        public Palestrante(Guid id, string nome, string email, DateTime birthDate)
         {
             Id = id;
-            Name = name;
+            Nome = nome;
             Email = email;
             BirthDate = birthDate;
         }
@@ -18,7 +18,7 @@ namespace Palestras.Domain.Models
         {
         }
 
-        public string Name { get; private set; }
+        public string Nome { get; private set; }
 
         public string Email { get; private set; }
 

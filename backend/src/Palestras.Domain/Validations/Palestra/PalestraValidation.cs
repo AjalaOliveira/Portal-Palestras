@@ -6,7 +6,7 @@ namespace Palestras.Domain.Validations.Palestra
 {
     public abstract class PalestraValidation<T> : AbstractValidator<T> where T : PalestraCommand
     {
-        protected void ValidateName()
+        protected void ValidaName()
         {
             RuleFor(c => c.Name)
                 .NotEmpty().WithMessage("Por favor, verifique se você digitou o nome")

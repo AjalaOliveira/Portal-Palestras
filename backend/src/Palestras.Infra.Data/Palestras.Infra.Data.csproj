@@ -41,8 +41,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Migrations\EventStoreSQL\" />
-  </ItemGroup>
-
 </Project>

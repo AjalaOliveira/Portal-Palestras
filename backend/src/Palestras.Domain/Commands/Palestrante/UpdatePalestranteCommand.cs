@@ -5,10 +5,10 @@ namespace Palestras.Domain.Commands.Palestrante
 {
     public class UpdatePalestranteCommand : PalestranteCommand
     {
-        public UpdatePalestranteCommand(Guid id, string name, string email, DateTime birthDate)
+        public UpdatePalestranteCommand(Guid id, string nome, string email, DateTime birthDate)
         {
             Id = id;
-            Name = name;
+            Nome = nome;
             Email = email;
             BirthDate = birthDate;
         }

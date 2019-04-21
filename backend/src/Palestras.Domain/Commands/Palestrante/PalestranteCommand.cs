@@ -7,7 +7,7 @@ namespace Palestras.Domain.Commands.Palestrante
     {
         public Guid Id { get; protected set; }
 
-        public string Name { get; protected set; }
+        public string Nome { get; protected set; }
 
         public string Email { get; protected set; }
 
