@@ -216,6 +216,9 @@ namespace Palestras.UI.Site.Controllers
                 {
                     // User claim for write palestrantes data
                     await _userManager.AddClaimAsync(user, new Claim("Palestrantes", "Write"));
+                    await _userManager.AddClaimAsync(user, new Claim("Palestrantes", "Remove"));
+                    await _userManager.AddClaimAsync(user, new Claim("Palestras", "Write"));
+                    await _userManager.AddClaimAsync(user, new Claim("Palestras", "Remove"));
 
                     _logger.LogInformation("O usuário criado com uma nova conta com senha.");
 
