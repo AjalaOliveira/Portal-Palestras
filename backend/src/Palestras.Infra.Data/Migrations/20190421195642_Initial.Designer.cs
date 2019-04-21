@@ -4,13 +4,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-//using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Palestras.Infra.Data.Context;
 
 namespace Palestras.Infra.Data.Migrations
 {
     [DbContext(typeof(PalestrasDbContext))]
-    [Migration("20190421171809_Initial")]
+    [Migration("20190421195642_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

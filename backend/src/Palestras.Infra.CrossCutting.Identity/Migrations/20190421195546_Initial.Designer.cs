@@ -10,7 +10,7 @@ using Palestras.Infra.CrossCutting.Identity.Data;
 namespace Palestras.Infra.CrossCutting.Identity.Migrations
 {
     [DbContext(typeof(IdentityDbContext))]
-    [Migration("20190421170950_Initial")]
+    [Migration("20190421195546_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
