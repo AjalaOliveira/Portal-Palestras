@@ -22,6 +22,7 @@ namespace Palestras.Application.ViewModels
         public string MiniBio { get; set; }
 
         [Required(ErrorMessage = "A URL é obrigatória")]
+        [Url(ErrorMessage = "Informe uma URL válida!")]
         [MinLength(2)]
         [MaxLength(100)]
         [DisplayName("URL")]

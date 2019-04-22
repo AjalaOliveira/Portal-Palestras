@@ -14,3 +14,4 @@ C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\obj\Debug\netcore
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\obj\Debug\netcoreapp2.0\Palestras.Domain.Core.AssemblyInfo.cs
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\obj\Debug\netcoreapp2.0\Palestras.Domain.Core.dll
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\obj\Debug\netcoreapp2.0\Palestras.Domain.Core.pdb
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\obj\Debug\netcoreapp2.0\Palestras.Domain.Core.csprojAssemblyReference.cache
