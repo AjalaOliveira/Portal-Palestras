@@ -52,4 +52,6 @@
     <Exec Command="dotnet bundle" />
   </Target>
 
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
 </Project>

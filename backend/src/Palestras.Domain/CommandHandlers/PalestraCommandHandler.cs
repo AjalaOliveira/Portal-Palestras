@@ -38,10 +38,10 @@ namespace Palestras.Domain.CommandHandlers
 
             var palestra = new Palestra(Guid.NewGuid(), message.Titulo, message.Descricao, message.Data, message.PalestranteId);
 
-            var existingPalestra = _palestraRepository.GetByDescricao(palestra.Descricao);
+            var existingDescricao = _palestraRepository.GetByDescricao(palestra.Descricao);
 
-            if (existingPalestra != null && existingPalestra.Id != palestra.Id)
-                if (!existingPalestra.Equals(palestra))
+            if (existingDescricao != null && existingDescricao.Id != palestra.Id)
+                if (!existingDescricao.Equals(palestra))
                 {
                     Bus.RaiseEvent(new DomainNotification(message.MessageType, "Registro duplicado!."));
                     return Task.CompletedTask;

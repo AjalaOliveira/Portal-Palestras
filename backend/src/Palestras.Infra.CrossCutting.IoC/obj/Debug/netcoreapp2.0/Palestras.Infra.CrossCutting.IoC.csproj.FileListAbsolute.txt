@@ -21,10 +21,6 @@ C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Infra.Cr
 C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.csproj.CopyComplete
 C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.dll
 C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.pdb
-C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.csprojAssemblyReference.cache
-C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
-C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.AssemblyInfoInputs.cache
-C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.AssemblyInfo.cs
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\bin\Debug\netcoreapp2.0\appsettings.json
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\bin\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.deps.json
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\bin\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.dll
@@ -41,6 +37,10 @@ C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\bin\De
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\bin\Debug\netcoreapp2.0\Palestras.Infra.Data.pdb
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\bin\Debug\netcoreapp2.0\Palestras.Domain.Core.pdb
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\bin\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Bus.pdb
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.csprojAssemblyReference.cache
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.AssemblyInfoInputs.cache
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.AssemblyInfo.cs
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.csproj.CopyComplete
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.dll
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.IoC.pdb

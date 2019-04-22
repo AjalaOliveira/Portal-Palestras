@@ -32,7 +32,10 @@
           "System.Text.RegularExpressions": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.3/AutoMapper.dll": {}
+          "lib/netstandard1.3/AutoMapper.dll": {
+            "assemblyVersion": "6.2.2.0",
+            "fileVersion": "6.2.2.0"
+          }
         }
       },
       "FluentValidation/7.5.2": {
@@ -42,12 +45,18 @@
           "System.ComponentModel.Primitives": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard2.0/FluentValidation.dll": {}
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.5.2.0"
+          }
         }
       },
       "MediatR/4.1.0": {
         "runtime": {
-          "lib/netstandard2.0/MediatR.dll": {}
+          "lib/netstandard2.0/MediatR.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
@@ -59,7 +68,10 @@
           "Microsoft.Extensions.ObjectPool": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Antiforgery.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Antiforgery.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Authentication/2.2.0": {
@@ -73,7 +85,10 @@
           "Microsoft.Extensions.WebEncoders": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -83,7 +98,10 @@
           "Microsoft.Extensions.Options": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Authentication.Cookies/2.2.0": {
@@ -91,7 +109,10 @@
           "Microsoft.AspNetCore.Authentication": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Cookies.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Cookies.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Authentication.Core/2.2.0": {
@@ -101,7 +122,10 @@
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Authorization/2.2.0": {
@@ -110,7 +134,10 @@
           "Microsoft.Extensions.Options": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Authorization.Policy/2.2.0": {
@@ -119,12 +146,18 @@
           "Microsoft.AspNetCore.Authorization": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.Policy.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.Policy.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/2.2.0": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Cryptography.KeyDerivation/2.2.0": {
@@ -132,7 +165,10 @@
           "Microsoft.AspNetCore.Cryptography.Internal": "2.2.0"
         },
         "runtime": {
-          "lib/netcoreapp2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
+          "lib/netcoreapp2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.DataProtection/2.2.0": {
@@ -148,17 +184,26 @@
           "System.Security.Principal.Windows": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.DataProtection.Abstractions/2.2.0": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Diagnostics.Abstractions/2.2.0": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
@@ -168,7 +213,10 @@
           "Microsoft.Extensions.Hosting.Abstractions": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
@@ -177,7 +225,10 @@
           "Microsoft.Extensions.Configuration.Abstractions": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -185,7 +236,10 @@
           "System.Text.Encodings.Web": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Http/2.2.0": {
@@ -197,7 +251,10 @@
           "Microsoft.Net.Http.Headers": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
@@ -206,7 +263,10 @@
           "System.Text.Encodings.Web": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
@@ -217,7 +277,10 @@
           "System.Buffers": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Http.Features/2.2.0": {
@@ -225,7 +288,10 @@
           "Microsoft.Extensions.Primitives": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Identity/2.2.0": {
@@ -236,7 +302,10 @@
           "Microsoft.Extensions.Identity.Core": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Identity.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Identity.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/2.2.0": {
@@ -246,7 +315,10 @@
           "Microsoft.Extensions.Identity.Stores": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.JsonPatch/2.2.0": {
@@ -255,7 +327,10 @@
           "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
@@ -264,7 +339,10 @@
           "Microsoft.Net.Http.Headers": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
@@ -286,7 +364,10 @@
           "System.Threading.Tasks.Extensions": "4.5.1"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Mvc.DataAnnotations/2.2.0": {
@@ -296,7 +377,10 @@
           "System.ComponentModel.Annotations": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Mvc.Formatters.Json/2.2.0": {
@@ -305,7 +389,10 @@
           "Microsoft.AspNetCore.Mvc.Core": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Mvc.ViewFeatures/2.2.0": {
@@ -320,7 +407,10 @@
           "Newtonsoft.Json.Bson": "1.0.1"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.2.0": {
@@ -328,7 +418,10 @@
           "Microsoft.Extensions.Primitives": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Routing/2.2.0": {
@@ -340,7 +433,10 @@
           "Microsoft.Extensions.Options": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Routing.Abstractions/2.2.0": {
@@ -348,7 +444,10 @@
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.WebUtilities/2.2.0": {
@@ -357,7 +456,10 @@
           "System.Text.Encodings.Web": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.CSharp/4.5.0": {},
@@ -373,7 +475,10 @@
           "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
+          "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore/2.2.4": {
@@ -390,12 +495,18 @@
           "System.Interactive.Async": "3.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "2.2.4.0",
+            "fileVersion": "2.2.4.19081"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.Abstractions/2.2.4": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "2.2.4.0",
+            "fileVersion": "2.2.4.19081"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/2.2.4": {},
@@ -405,7 +516,10 @@
           "Microsoft.EntityFrameworkCore.Relational": "2.2.4"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "2.2.4.0",
+            "fileVersion": "2.2.4.19081"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/2.2.4": {
@@ -413,7 +527,10 @@
           "Microsoft.EntityFrameworkCore": "2.2.4"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "assemblyVersion": "2.2.4.0",
+            "fileVersion": "2.2.4.19081"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.SqlServer/2.2.4": {
@@ -422,7 +539,10 @@
           "System.Data.SqlClient": "4.6.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
+            "assemblyVersion": "2.2.4.0",
+            "fileVersion": "2.2.4.19081"
+          }
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
@@ -430,7 +550,10 @@
           "Microsoft.Extensions.Primitives": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.Caching.Memory/2.2.0": {
@@ -440,7 +563,10 @@
           "Microsoft.Extensions.Options": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/2.2.0": {
@@ -448,7 +574,10 @@
           "Microsoft.Extensions.Configuration.Abstractions": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
@@ -456,7 +585,10 @@
           "Microsoft.Extensions.Primitives": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Binder/2.2.0": {
@@ -464,7 +596,10 @@
           "Microsoft.Extensions.Configuration": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.FileExtensions/2.2.0": {
@@ -473,7 +608,10 @@
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Json/2.2.0": {
@@ -483,7 +621,10 @@
           "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/2.2.0": {
@@ -491,12 +632,18 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
         },
         "runtime": {
-          "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.DependencyModel/2.1.0": {
@@ -508,7 +655,10 @@
           "System.Linq": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {}
+          "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
         }
       },
       "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
@@ -516,7 +666,10 @@
           "Microsoft.Extensions.Primitives": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.FileProviders.Physical/2.2.0": {
@@ -525,12 +678,18 @@
           "Microsoft.Extensions.FileSystemGlobbing": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.FileSystemGlobbing/2.2.0": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.Hosting.Abstractions/2.2.0": {
@@ -541,7 +700,10 @@
           "Microsoft.Extensions.Logging.Abstractions": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.Extensions.Identity.Core/2.2.0": {
@@ -552,7 +714,10 @@
           "System.ComponentModel.Annotations": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Identity.Core.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Identity.Core.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.Extensions.Identity.Stores/2.2.0": {
@@ -562,7 +727,10 @@
           "System.ComponentModel.Annotations": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Identity.Stores.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Identity.Stores.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.Extensions.Localization/2.2.0": {
@@ -573,12 +741,18 @@
           "Microsoft.Extensions.Options": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Localization.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Localization.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.Extensions.Localization.Abstractions/2.2.0": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.Extensions.Logging/2.2.0": {
@@ -589,17 +763,26 @@
           "Microsoft.Extensions.Options": "2.2.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/2.2.0": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.ObjectPool/2.2.0": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.Options/2.2.0": {
@@ -609,7 +792,10 @@
           "System.ComponentModel.Annotations": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.Primitives/2.2.0": {
@@ -618,7 +804,10 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
         }
       },
       "Microsoft.Extensions.WebEncoders/2.2.0": {
@@ -628,7 +817,10 @@
           "System.Text.Encodings.Web": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.Net.Http.Headers/2.2.0": {
@@ -637,7 +829,10 @@
           "System.Buffers": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
+          "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.NETCore.Targets/1.1.0": {},
@@ -648,22 +843,32 @@
           "System.Security.Principal.Windows": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
             "rid": "unix",
-            "assetType": "runtime"
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
           },
           "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
             "rid": "win",
-            "assetType": "runtime"
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
       "Newtonsoft.Json/11.0.2": {
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
         }
       },
       "Newtonsoft.Json.Bson/1.0.1": {
@@ -671,7 +876,10 @@
           "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
-          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
+          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.1.20722"
+          }
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -689,7 +897,10 @@
           "System.Threading": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.0/Remotion.Linq.dll": {}
+          "lib/netstandard1.0/Remotion.Linq.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.30000"
+          }
         }
       },
       "runtime.native.System/4.0.0": {
@@ -708,7 +919,8 @@
         "runtimeTargets": {
           "runtimes/win-arm64/native/sni.dll": {
             "rid": "win-arm64",
-            "assetType": "native"
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
           }
         }
       },
@@ -716,7 +928,8 @@
         "runtimeTargets": {
           "runtimes/win-x64/native/sni.dll": {
             "rid": "win-x64",
-            "assetType": "native"
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
           }
         }
       },
@@ -724,7 +937,8 @@
         "runtimeTargets": {
           "runtimes/win-x86/native/sni.dll": {
             "rid": "win-x86",
-            "assetType": "native"
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
           }
         }
       },
@@ -756,7 +970,10 @@
       },
       "System.Collections.Immutable/1.5.0": {
         "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "assemblyVersion": "1.2.3.0",
+            "fileVersion": "4.6.26515.6"
+          }
         }
       },
       "System.Collections.NonGeneric/4.3.0": {
@@ -822,16 +1039,23 @@
           "runtime.native.System.Data.SqlClient.sni": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Data.SqlClient.dll": {}
+          "lib/netstandard2.0/System.Data.SqlClient.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.6.27110.4"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll": {
             "rid": "unix",
-            "assetType": "runtime"
+            "assetType": "runtime",
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.6.27110.4"
           },
           "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll": {
             "rid": "win",
-            "assetType": "runtime"
+            "assetType": "runtime",
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.6.27110.4"
           }
         }
       },
@@ -843,7 +1067,10 @@
       },
       "System.Diagnostics.DiagnosticSource/4.5.0": {
         "runtime": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
+          }
         }
       },
       "System.Diagnostics.Tracing/4.3.0": {
@@ -897,7 +1124,10 @@
       },
       "System.Interactive.Async/3.2.0": {
         "runtime": {
-          "lib/netstandard2.0/System.Interactive.Async.dll": {}
+          "lib/netstandard2.0/System.Interactive.Async.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.702"
+          }
         }
       },
       "System.IO/4.3.0": {
@@ -971,7 +1201,10 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Memory.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.26606.5"
+          }
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -1044,7 +1277,10 @@
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.1": {
         "runtime": {
-          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.4.0",
+            "fileVersion": "0.0.0.0"
+          }
         }
       },
       "System.Runtime.Extensions/4.3.0": {
@@ -1099,12 +1335,17 @@
           "System.Security.Principal.Windows": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
             "rid": "win",
-            "assetType": "runtime"
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -1133,12 +1374,17 @@
           "System.Security.Cryptography.Cng": "4.4.0"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll": {}
+          "lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll": {
             "rid": "win",
-            "assetType": "runtime"
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -1148,7 +1394,10 @@
           "System.Security.Permissions": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Cryptography.Xml.dll": {}
+          "lib/netstandard2.0/System.Security.Cryptography.Xml.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
         }
       },
       "System.Security.Permissions/4.5.0": {
@@ -1156,7 +1405,10 @@
           "System.Security.AccessControl": "4.5.0"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Permissions.dll": {}
+          "lib/netstandard2.0/System.Security.Permissions.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
         }
       },
       "System.Security.Principal/4.3.0": {
@@ -1166,16 +1418,23 @@
       },
       "System.Security.Principal.Windows/4.5.0": {
         "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll": {
             "rid": "unix",
-            "assetType": "runtime"
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
           },
           "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll": {
             "rid": "win",
-            "assetType": "runtime"
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -1190,18 +1449,26 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
             "rid": "win",
-            "assetType": "runtime"
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
       "System.Text.Encodings.Web/4.5.0": {
         "runtime": {
-          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
+          }
         }
       },
       "System.Text.RegularExpressions/4.3.0": {
@@ -1226,7 +1493,10 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.6.26606.5"
+          }
         }
       },
       "Palestras.Application/1.0.0": {

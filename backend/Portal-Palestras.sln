@@ -109,46 +109,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC84AC82-7254-4657-BF73-C6194F1F5DDF}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 10
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://ajalaoliveira.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = src\\Palestras.UI.Site\\Palestras.UI.Site.csproj
-		SccProjectTopLevelParentUniqueName1 = Palestras.sln
-		SccProjectName1 = src/Palestras.UI.Site
-		SccLocalPath1 = src\\Palestras.UI.Site
-		SccProjectUniqueName2 = src\\Palestras.Domain\\Palestras.Domain.csproj
-		SccProjectTopLevelParentUniqueName2 = Palestras.sln
-		SccProjectName2 = src/Palestras.Domain
-		SccLocalPath2 = src\\Palestras.Domain
-		SccProjectUniqueName3 = src\\Palestras.Application\\Palestras.Application.csproj
-		SccProjectTopLevelParentUniqueName3 = Palestras.sln
-		SccProjectName3 = src/Palestras.Application
-		SccLocalPath3 = src\\Palestras.Application
-		SccProjectUniqueName4 = src\\Palestras.Infra.Data\\Palestras.Infra.Data.csproj
-		SccProjectTopLevelParentUniqueName4 = Palestras.sln
-		SccProjectName4 = src/Palestras.Infra.Data
-		SccLocalPath4 = src\\Palestras.Infra.Data
-		SccProjectUniqueName5 = src\\Palestras.Infra.CrossCutting.Identity\\Palestras.Infra.CrossCutting.Identity.csproj
-		SccProjectTopLevelParentUniqueName5 = Palestras.sln
-		SccProjectName5 = src/Palestras.Infra.CrossCutting.Identity
-		SccLocalPath5 = src\\Palestras.Infra.CrossCutting.Identity
-		SccProjectUniqueName6 = src\\Palestras.Infra.CrossCutting.IoC\\Palestras.Infra.CrossCutting.IoC.csproj
-		SccProjectTopLevelParentUniqueName6 = Palestras.sln
-		SccProjectName6 = src/Palestras.Infra.CrossCutting.IoC
-		SccLocalPath6 = src\\Palestras.Infra.CrossCutting.IoC
-		SccProjectUniqueName7 = src\\Palestras.Domain.Core\\Palestras.Domain.Core.csproj
-		SccProjectTopLevelParentUniqueName7 = Palestras.sln
-		SccProjectName7 = src/Palestras.Domain.Core
-		SccLocalPath7 = src\\Palestras.Domain.Core
-		SccProjectUniqueName8 = src\\Palestras.Infra.CrossCutting.Bus\\Palestras.Infra.CrossCutting.Bus.csproj
-		SccProjectTopLevelParentUniqueName8 = Palestras.sln
-		SccProjectName8 = src/Palestras.Infra.CrossCutting.Bus
-		SccLocalPath8 = src\\Palestras.Infra.CrossCutting.Bus
-		SccProjectUniqueName9 = src\\Palestras.WebApi\\Palestras.WebApi.csproj
-		SccProjectTopLevelParentUniqueName9 = Palestras.sln
-		SccProjectName9 = src/Palestras.WebApi
-		SccLocalPath9 = src\\Palestras.WebApi
-	EndGlobalSection
 EndGlobal
