@@ -1,9 +1,10 @@
 ﻿using Palestras.Domain.Models;
+using System;
 
 namespace Palestras.Domain.Interfaces
 {
     public interface IPalestranteRepository : IRepository<Palestrante>
     {
-        Palestrante GetByEmail(string email);
+        Palestra GetByPalestranteId(Guid palestranteId);
     }
 }

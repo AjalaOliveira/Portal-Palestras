@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Palestras.Domain.Interfaces;
 using Palestras.Domain.Models;
@@ -13,9 +14,18 @@ namespace Palestras.Infra.Data.Repository
         {
         }
 
-        public Palestra GetByEmail(string email)
+        public Palestra GetByDescricao(string descricao)
         {
-            return DbSet.AsNoTracking().FirstOrDefault(c => c.Email == email);
+
+            return DbSet.AsNoTracking()
+                .FirstOrDefault(c => c.Descricao == descricao);
+        }
+
+        public override Palestra GetById(Guid id)
+        {
+            return Db.Palestras.Where(c => c.Id == id)
+                .Include(c => c.Palestrante)
+                .FirstOrDefault();
         }
     }
 }

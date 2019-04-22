@@ -30,10 +30,10 @@
                 @Html.DisplayNameFor(model => model.Titulo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                @Html.DisplayNameFor(model => model.Descricao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.BirthDate)
+                @Html.DisplayNameFor(model => model.Data)
             </th>
             <th></th>
         </tr>
@@ -46,10 +46,10 @@
                     @Html.DisplayFor(modelItem => item.Titulo)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Email)
+                    @Html.DisplayFor(modelItem => item.Descricao)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.BirthDate)
+                    @Html.DisplayFor(modelItem => item.Data)
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id" title="Atualizar" class="btn btn-warning">
@@ -106,7 +106,7 @@
                 }).done(function(data) {
                     var formatHtml = "<table class='table table-striped'>";
                     formatHtml +=
-                        "<thead><th>Ação</th><th>Quando</th><th>Id</th><th>Nome</th><th>E-mail</th><th>Nascimento</th><th>Usuário</th></thead>";
+                        "<thead><th>Ação</th><th>Quando</th><th>Id</th><th>Titulo</th><th>Descrição</th><th>Data</th><th>Usuário</th></thead>";
 
                     for (var i = 0; i < data.length; i++) {
                         var change = data[i];
@@ -115,8 +115,8 @@
                         formatHtml += "<td>" + change.when + "</td>";
                         formatHtml += "<td>" + change.id + "</td>";
                         formatHtml += "<td>" + change.titulo + "</td>";
-                        formatHtml += "<td>" + change.email + "</td>";
-                        formatHtml += "<td>" + change.birthDate + "</td>";
+                        formatHtml += "<td>" + change.descricao + "</td>";
+                        formatHtml += "<td>" + change.data + "</td>";
                         formatHtml += "<td>" + change.who + "</td>";
                         formatHtml += "</tr>";
                     }

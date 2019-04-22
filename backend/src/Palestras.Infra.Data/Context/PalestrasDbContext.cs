@@ -14,12 +14,20 @@ namespace Palestras.Infra.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new PalestranteMap());
+            modelBuilder.ApplyConfiguration(new PalestraMap());
+
+            modelBuilder.Entity<Palestra>()
+              .HasOne<Palestrante>(s => s.Palestrante)
+                .WithMany(g => g.Palestras)
+                   .HasForeignKey(s => s.PalestranteId);
 
             base.OnModelCreating(modelBuilder);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+
+
             // get the configuration from the app settings
             var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())

@@ -36,17 +36,20 @@ namespace Palestras.Domain.CommandHandlers
                 return Task.CompletedTask;
             }
 
-            var palestra = new Palestra(Guid.NewGuid(), message.Titulo, message.Email, message.BirthDate);
+            var palestra = new Palestra(Guid.NewGuid(), message.Titulo, message.Descricao, message.Data, message.PalestranteId);
 
-            if (_palestraRepository.GetByEmail(palestra.Email) != null)
-            {
-                Bus.RaiseEvent(new DomainNotification(message.MessageType, "O e-mail informado já está em uso."));
-                return Task.CompletedTask;
-            }
+            var existingPalestra = _palestraRepository.GetByDescricao(palestra.Descricao);
+
+            if (existingPalestra != null && existingPalestra.Id != palestra.Id)
+                if (!existingPalestra.Equals(palestra))
+                {
+                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "Registro duplicado!."));
+                    return Task.CompletedTask;
+                }
 
             _palestraRepository.Add(palestra);
 
-            if (Commit()) Bus.RaiseEvent(new PalestraRegisteredEvent(palestra.Id, palestra.Titulo, palestra.Email, palestra.BirthDate));
+            if (Commit()) Bus.RaiseEvent(new PalestraRegisteredEvent(palestra.Id, palestra.Titulo, palestra.Descricao, palestra.Data, palestra.PalestranteId));
 
             return Task.CompletedTask;
         }
@@ -74,19 +77,19 @@ namespace Palestras.Domain.CommandHandlers
                 return Task.CompletedTask;
             }
 
-            var palestra = new Palestra(message.Id, message.Titulo, message.Email, message.BirthDate);
-            var existingPalestra = _palestraRepository.GetByEmail(palestra.Email);
+            var palestra = new Palestra(message.Id, message.Titulo, message.Descricao, message.Data, message.PalestranteId);
+            var existingPalestra = _palestraRepository.GetByDescricao(palestra.Descricao);
 
             if (existingPalestra != null && existingPalestra.Id != palestra.Id)
                 if (!existingPalestra.Equals(palestra))
                 {
-                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "O e-mail informado já está em uso."));
+                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "Tente novamente!."));
                     return Task.CompletedTask;
                 }
 
             _palestraRepository.Update(palestra);
 
-            if (Commit()) Bus.RaiseEvent(new PalestraUpdatedEvent(palestra.Id, palestra.Titulo, palestra.Email, palestra.BirthDate));
+            if (Commit()) Bus.RaiseEvent(new PalestraUpdatedEvent(palestra.Id, palestra.Titulo, palestra.Descricao, palestra.Data, palestra.PalestranteId));
 
             return Task.CompletedTask;
         }

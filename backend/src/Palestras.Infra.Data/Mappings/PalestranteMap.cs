@@ -15,11 +15,6 @@ namespace Palestras.Infra.Data.Mappings
                 .HasColumnType("varchar(100)")
                 .HasMaxLength(100)
                 .IsRequired();
-
-            builder.Property(c => c.Email)
-                .HasColumnType("varchar(100)")
-                .HasMaxLength(11)
-                .IsRequired();
         }
     }
 }

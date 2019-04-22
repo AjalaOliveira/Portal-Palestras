@@ -36,19 +36,22 @@ namespace Palestras.Domain.CommandHandlers
                 return Task.CompletedTask;
             }
 
-            var palestrante = new Palestrante(Guid.NewGuid(), message.Nome, message.Email, message.BirthDate);
+            var palestrante = new Palestrante(Guid.NewGuid(), message.Nome, message.MiniBio, message.Url);
 
-            if (_palestranteRepository.GetByEmail(palestrante.Email) != null)
-            {
-                Bus.RaiseEvent(new DomainNotification(message.MessageType, "O e-mail informado já está em uso."));
-                return Task.CompletedTask;
-            }
+            var existingPalestrante = _palestranteRepository.GetById(palestrante.Id);
+
+            if (existingPalestrante != null && existingPalestrante.Id != palestrante.Id)
+                if (!existingPalestrante.Equals(palestrante))
+                {
+                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "Registro duplicado!."));
+                    return Task.CompletedTask;
+                }
+
 
             _palestranteRepository.Add(palestrante);
 
             if (Commit())
-                Bus.RaiseEvent(new PalestranteRegisteredEvent(palestrante.Id, palestrante.Nome, palestrante.Email,
-                    palestrante.BirthDate));
+                Bus.RaiseEvent(new PalestranteRegisteredEvent(palestrante.Id, palestrante.Nome, palestrante.MiniBio, palestrante.Url));
 
             return Task.CompletedTask;
         }
@@ -76,21 +79,12 @@ namespace Palestras.Domain.CommandHandlers
                 return Task.CompletedTask;
             }
 
-            var palestrante = new Palestrante(message.Id, message.Nome, message.Email, message.BirthDate);
-            var existingPalestrante = _palestranteRepository.GetByEmail(palestrante.Email);
-
-            if (existingPalestrante != null && existingPalestrante.Id != palestrante.Id)
-                if (!existingPalestrante.Equals(palestrante))
-                {
-                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "O e-mail informado já está em uso."));
-                    return Task.CompletedTask;
-                }
+            var palestrante = new Palestrante(message.Id, message.Nome, message.MiniBio, message.Url);
 
             _palestranteRepository.Update(palestrante);
 
             if (Commit())
-                Bus.RaiseEvent(new PalestranteUpdatedEvent(palestrante.Id, palestrante.Nome, palestrante.Email,
-                    palestrante.BirthDate));
+                Bus.RaiseEvent(new PalestranteUpdatedEvent(palestrante.Id, palestrante.Nome, palestrante.MiniBio, palestrante.Url));
 
             return Task.CompletedTask;
         }

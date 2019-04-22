@@ -29,12 +29,15 @@ namespace Palestras.Application.EventSourcedNormalizers
                     Titulo = string.IsNullOrWhiteSpace(change.Titulo) || change.Titulo == last.Titulo
                         ? ""
                         : change.Titulo,
-                    Email = string.IsNullOrWhiteSpace(change.Email) || change.Email == last.Email
+                    Descricao = string.IsNullOrWhiteSpace(change.Descricao) || change.Descricao == last.Descricao
                         ? ""
-                        : change.Email,
-                    BirthDate = string.IsNullOrWhiteSpace(change.BirthDate) || change.BirthDate == last.BirthDate
+                        : change.Descricao,
+                    Data = string.IsNullOrWhiteSpace(change.Data) || change.Data == last.Data
                         ? ""
-                        : change.BirthDate.Substring(0, 10),
+                        : change.Data.Substring(0, 10),
+                    PalestranteId = string.IsNullOrWhiteSpace(change.PalestranteId) || change.PalestranteId == last.PalestranteId
+                        ? ""
+                        : change.Data,
                     Action = string.IsNullOrWhiteSpace(change.Action) ? "" : change.Action,
                     When = change.When,
                     Who = change.Who
@@ -58,8 +61,9 @@ namespace Palestras.Application.EventSourcedNormalizers
                 {
                     case "PalestraRegisteredEvent":
                         values = JsonConvert.DeserializeObject<dynamic>(e.Data);
-                        slot.BirthDate = values["BirthDate"];
-                        slot.Email = values["Email"];
+                        slot.Data = values["Data"];
+                        slot.PalestranteId = values["PalestranteId"];
+                        slot.Descricao = values["Descricao"];
                         slot.Titulo = values["Titulo"];
                         slot.Action = "Cadastrado";
                         slot.When = values["Timestamp"];
@@ -68,8 +72,9 @@ namespace Palestras.Application.EventSourcedNormalizers
                         break;
                     case "PalestraUpdatedEvent":
                         values = JsonConvert.DeserializeObject<dynamic>(e.Data);
-                        slot.BirthDate = values["BirthDate"];
-                        slot.Email = values["Email"];
+                        slot.Data = values["Data"];
+                        slot.PalestranteId = values["PalestranteId"];
+                        slot.Descricao = values["Descricao"];
                         slot.Titulo = values["Titulo"];
                         slot.Action = "Atualizado";
                         slot.When = values["Timestamp"];

@@ -8,21 +8,28 @@ namespace Palestras.Application.ViewModels
     {
         [Key] public Guid Id { get; set; }
 
-        [Required(ErrorMessage = "O nome é obrigatório")]
+        [Required(ErrorMessage = "O titulo é obrigatório")]
         [MinLength(2)]
         [MaxLength(100)]
         [DisplayName("Titulo")]
         public string Titulo { get; set; }
 
-        [Required(ErrorMessage = "O e-mail é obrigatório")]
-        [EmailAddress]
-        [DisplayName("E-mail")]
-        public string Email { get; set; }
+        [Required(ErrorMessage = "A descrição é obrigatório")]
+        [MinLength(2)]
+        [MaxLength(100)]
+        [DisplayName("Descrição")]
+        public string Descricao { get; set; }
 
-        [Required(ErrorMessage = "A data de nascimento é obrigatória")]
+        [Required(ErrorMessage = "A data é obrigatória")]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         [DataType(DataType.Date, ErrorMessage = "Data em formato inválido")]
-        [DisplayName("Nascimento")]
-        public DateTime BirthDate { get; set; }
+        [DisplayName("Data")]
+        public DateTime Data { get; set; }
+
+        public virtual PalestranteViewModel Palestrante { get; set; }
+
+        [DisplayName("Palestrante")]
+        [Required(ErrorMessage = "O palestrante é obrigatório")]
+        public Guid PalestranteId { get; set; }
     }
 }

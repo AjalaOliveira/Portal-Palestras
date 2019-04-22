@@ -29,12 +29,12 @@ namespace Palestras.Application.EventSourcedNormalizers
                     Nome = string.IsNullOrWhiteSpace(change.Nome) || change.Nome == last.Nome
                         ? ""
                         : change.Nome,
-                    Email = string.IsNullOrWhiteSpace(change.Email) || change.Email == last.Email
+                    MiniBio = string.IsNullOrWhiteSpace(change.MiniBio) || change.MiniBio == last.MiniBio
                         ? ""
-                        : change.Email,
-                    BirthDate = string.IsNullOrWhiteSpace(change.BirthDate) || change.BirthDate == last.BirthDate
+                        : change.MiniBio,
+                    Url = string.IsNullOrWhiteSpace(change.Url) || change.Url == last.Url
                         ? ""
-                        : change.BirthDate.Substring(0, 10),
+                        : change.Url,
                     Action = string.IsNullOrWhiteSpace(change.Action) ? "" : change.Action,
                     When = change.When,
                     Who = change.Who
@@ -58,8 +58,8 @@ namespace Palestras.Application.EventSourcedNormalizers
                 {
                     case "PalestranteRegisteredEvent":
                         values = JsonConvert.DeserializeObject<dynamic>(e.Data);
-                        slot.BirthDate = values["BirthDate"];
-                        slot.Email = values["Email"];
+                        slot.MiniBio = values["MiniBio"];
+                        slot.Url = values["Url"];
                         slot.Nome = values["Nome"];
                         slot.Action = "Cadastrado";
                         slot.When = values["Timestamp"];
@@ -68,8 +68,8 @@ namespace Palestras.Application.EventSourcedNormalizers
                         break;
                     case "PalestranteUpdatedEvent":
                         values = JsonConvert.DeserializeObject<dynamic>(e.Data);
-                        slot.BirthDate = values["BirthDate"];
-                        slot.Email = values["Email"];
+                        slot.MiniBio = values["MiniBio"];
+                        slot.Url = values["Url"];
                         slot.Nome = values["Nome"];
                         slot.Action = "Atualizado";
                         slot.When = values["Timestamp"];

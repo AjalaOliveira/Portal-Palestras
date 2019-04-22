@@ -5,20 +5,20 @@ namespace Palestras.Domain.Events.Palestrante
 {
     public class PalestranteUpdatedEvent : Event
     {
-        public PalestranteUpdatedEvent(Guid id, string nome, string email, DateTime birthDate)
+        public PalestranteUpdatedEvent(Guid id, string nome, string miniBio, string url)
         {
             Id = id;
             Nome = nome;
-            Email = email;
-            BirthDate = birthDate;
+            MiniBio = miniBio;
+            Url = url;
             AggregateId = id;
         }
         public Guid Id { get; set; }
 
         public string Nome { get; private set; }
 
-        public string Email { get; private set; }
+        public string MiniBio { get; private set; }
 
-        public DateTime BirthDate { get; private set; }
+        public string Url { get; private set; }
     }
 }

@@ -25,18 +25,18 @@
 <div class="panel panel-default">
     <table class="table table-striped">
         <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BirthDate)
-            </th>
-            <th></th>
-        </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MiniBio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Url)
+                </th>
+                <th></th>
+            </tr>
         </thead>
         <tbody>
         @foreach (var item in Model)
@@ -46,10 +46,10 @@
                     @Html.DisplayFor(modelItem => item.Nome)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Email)
+                    @Html.DisplayFor(modelItem => item.MiniBio)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.BirthDate)
+                    @Html.DisplayFor(modelItem => item.Url)
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id" title="Atualizar" class="btn btn-warning">
@@ -106,7 +106,7 @@
                 }).done(function(data) {
                     var formatHtml = "<table class='table table-striped'>";
                     formatHtml +=
-                        "<thead><th>Ação</th><th>Quando</th><th>Id</th><th>Nome</th><th>E-mail</th><th>Nascimento</th><th>Usuário</th></thead>";
+                        "<thead><th>Ação</th><th>Quando</th><th>Id</th><th>Nome</th><th>MiniBio</th><th>URL</th><th>Usuário</th></thead>";
 
                     for (var i = 0; i < data.length; i++) {
                         var change = data[i];
@@ -115,8 +115,8 @@
                         formatHtml += "<td>" + change.when + "</td>";
                         formatHtml += "<td>" + change.id + "</td>";
                         formatHtml += "<td>" + change.nome + "</td>";
-                        formatHtml += "<td>" + change.email + "</td>";
-                        formatHtml += "<td>" + change.birthDate + "</td>";
+                        formatHtml += "<td>" + change.miniBio + "</td>";
+                        formatHtml += "<td>" + change.url + "</td>";
                         formatHtml += "<td>" + change.who + "</td>";
                         formatHtml += "</tr>";
                     }

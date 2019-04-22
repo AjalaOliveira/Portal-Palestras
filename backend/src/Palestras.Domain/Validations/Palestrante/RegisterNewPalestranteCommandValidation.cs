@@ -7,8 +7,7 @@ namespace Palestras.Domain.Validations.Palestrante
         public RegisterNewPalestranteCommandValidation()
         {
             ValidaNome();
-            ValidateBirthDate();
-            ValidateEmail();
+            ValidateMiniBio();
         }
     }
 }

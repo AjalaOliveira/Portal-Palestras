@@ -9,8 +9,10 @@ namespace Palestras.Domain.Commands.Palestra
 
         public string Titulo { get; protected set; }
 
-        public string Email { get; protected set; }
+        public string Descricao { get; protected set; }
 
-        public DateTime BirthDate { get; protected set; }
+        public DateTime Data { get; protected set; }
+
+        public Guid PalestranteId { get; protected set; }
     }
 }

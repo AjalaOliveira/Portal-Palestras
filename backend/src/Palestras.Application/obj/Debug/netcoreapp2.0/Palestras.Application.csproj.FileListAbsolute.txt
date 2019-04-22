@@ -1,0 +1,38 @@
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Application.deps.json
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Application.dll
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Application.pdb
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Domain.Core.dll
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Domain.dll
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Bus.dll
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Infra.Data.dll
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Domain.pdb
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Infra.Data.pdb
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Domain.Core.pdb
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Bus.pdb
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.csprojAssemblyReference.cache
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.csproj.CoreCompileInputs.cache
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.AssemblyInfoInputs.cache
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.AssemblyInfo.cs
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.csproj.CopyComplete
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.dll
+C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.pdb
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.csprojAssemblyReference.cache
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.csproj.CoreCompileInputs.cache
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.AssemblyInfoInputs.cache
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.AssemblyInfo.cs
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Application.deps.json
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Application.dll
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Application.pdb
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Domain.Core.dll
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Domain.dll
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Bus.dll
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Infra.Data.dll
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Domain.pdb
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Infra.Data.pdb
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Domain.Core.pdb
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\bin\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Bus.pdb
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.csproj.CopyComplete
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.dll
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Application\obj\Debug\netcoreapp2.0\Palestras.Application.pdb

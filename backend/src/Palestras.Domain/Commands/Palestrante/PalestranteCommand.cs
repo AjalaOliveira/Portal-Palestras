@@ -9,8 +9,8 @@ namespace Palestras.Domain.Commands.Palestrante
 
         public string Nome { get; protected set; }
 
-        public string Email { get; protected set; }
+        public string MiniBio { get; protected set; }
 
-        public DateTime BirthDate { get; protected set; }
+        public string Url { get; protected set; }
     }
 }

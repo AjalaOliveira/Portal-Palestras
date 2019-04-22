@@ -13,19 +13,11 @@ namespace Palestras.Domain.Validations.Palestrante
                 .Length(2, 150).WithMessage("O nome deve ter entre 2 e 150 caracteres");
         }
 
-        protected void ValidateBirthDate()
+        protected void ValidateMiniBio()
         {
-            RuleFor(c => c.BirthDate)
-                .NotEmpty()
-                .Must(HaveMinimumAge)
-                .WithMessage("O Palestrante deve ter 18 anos ou mais");
-        }
-
-        protected void ValidateEmail()
-        {
-            RuleFor(c => c.Email)
-                .NotEmpty()
-                .EmailAddress();
+            RuleFor(c => c.MiniBio)
+                .NotEmpty().WithMessage("Por favor, verifique se você digitou a Mini Bio")
+                .Length(2, 150).WithMessage("A Mini Bio deve ter entre 2 e 150 caracteres");
         }
 
         protected void ValidateId()
@@ -34,9 +26,9 @@ namespace Palestras.Domain.Validations.Palestrante
                 .NotEqual(Guid.Empty);
         }
 
-        protected static bool HaveMinimumAge(DateTime birthDate)
+        protected static bool HaveMinimumAge(DateTime miniBio)
         {
-            return birthDate <= DateTime.Now.AddYears(-18);
+            return miniBio <= DateTime.Now.AddYears(-18);
         }
     }
 }

@@ -5,11 +5,11 @@ namespace Palestras.Domain.Commands.Palestrante
 {
     public class RegisterNewPalestranteCommand : PalestranteCommand
     {
-        public RegisterNewPalestranteCommand(string nome, string email, DateTime birthDate)
+        public RegisterNewPalestranteCommand(string nome, string miniBio, string url)
         {
             Nome = nome;
-            Email = email;
-            BirthDate = birthDate;
+            MiniBio = miniBio;
+            Url = url;
         }
 
         public override bool IsValid()

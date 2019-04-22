@@ -1,16 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 using Palestras.Domain.Core.Models;
 
 namespace Palestras.Domain.Models
 {
     public class Palestrante : Entity
     {
-        public Palestrante(Guid id, string nome, string email, DateTime birthDate)
+        public Palestrante(Guid id, string nome, string miniBio, string url)
         {
             Id = id;
             Nome = nome;
-            Email = email;
-            BirthDate = birthDate;
+            MiniBio = miniBio;
+            Url = url;
         }
 
         // Empty constructor for EF
@@ -20,8 +21,10 @@ namespace Palestras.Domain.Models
 
         public string Nome { get; private set; }
 
-        public string Email { get; private set; }
+        public string MiniBio { get; private set; }
 
-        public DateTime BirthDate { get; private set; }
+        public string Url { get; private set; }
+
+        public virtual ICollection<Palestra> Palestras { get; set; }
     }
 }

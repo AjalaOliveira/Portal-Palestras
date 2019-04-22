@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -6,6 +7,8 @@ using Palestras.Application.Interfaces;
 using Palestras.Application.ViewModels;
 using Palestras.Domain.Core.Notifications;
 using Palestras.Domain.Interfaces;
+using System.Linq;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Palestras.UI.Site.Controllers
 {
@@ -13,11 +16,14 @@ namespace Palestras.UI.Site.Controllers
     public class PalestraController : BaseController
     {
         private readonly IPalestraAppService _palestraAppService;
+        private readonly IPalestranteAppService _palestranteAppService;
 
         public PalestraController(IPalestraAppService palestraAppService,
+            IPalestranteAppService palestranteAppService,
             INotificationHandler<DomainNotification> notifications) : base(notifications)
         {
             _palestraAppService = palestraAppService;
+            _palestranteAppService = palestranteAppService;
         }
 
         [HttpGet]
@@ -47,6 +53,8 @@ namespace Palestras.UI.Site.Controllers
         [Route("palestra-management/register-new")]
         public IActionResult Create()
         {
+            ViewBag.PalestranteId = new SelectList(_palestranteAppService.GetAll(), "Id", "Nome");
+
             return View();
         }
 
@@ -62,6 +70,8 @@ namespace Palestras.UI.Site.Controllers
             if (IsValidOperation())
                 ViewBag.Sucesso = "Palestra Cadastrada!";
 
+            ViewBag.PalestranteId = new SelectList(_palestranteAppService.GetAll(), "Id", "Nome", palestraViewModel.PalestranteId);
+
             return View(palestraViewModel);
         }
 
@@ -75,6 +85,8 @@ namespace Palestras.UI.Site.Controllers
             var palestraViewModel = _palestraAppService.GetById(id.Value);
 
             if (palestraViewModel == null) return NotFound();
+
+            ViewBag.PalestranteId = new SelectList(_palestranteAppService.GetAll(), "Id", "Nome", palestraViewModel.PalestranteId);
 
             return View(palestraViewModel);
         }
@@ -91,6 +103,8 @@ namespace Palestras.UI.Site.Controllers
 
             if (IsValidOperation())
                 ViewBag.Sucesso = "Palestra Atualizada!";
+
+            ViewBag.PalestranteId = new SelectList(_palestranteAppService.GetAll(), "Id", "Nome", palestraViewModel.PalestranteId);
 
             return View(palestraViewModel);
         }

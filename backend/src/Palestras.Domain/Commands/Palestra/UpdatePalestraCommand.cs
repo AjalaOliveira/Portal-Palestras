@@ -5,12 +5,13 @@ namespace Palestras.Domain.Commands.Palestra
 {
     public class UpdatePalestraCommand : PalestraCommand
     {
-        public UpdatePalestraCommand(Guid id, string titulo, string email, DateTime birthDate)
+        public UpdatePalestraCommand(Guid id, string titulo, string descricao, DateTime data, Guid palestranteId)
         {
             Id = id;
             Titulo = titulo;
-            Email = email;
-            BirthDate = birthDate;
+            Descricao = descricao;
+            Data = data;
+            PalestranteId = palestranteId;
         }
 
         public override bool IsValid()

@@ -21,15 +21,26 @@ namespace Palestras.Infra.Data.Migrations
             modelBuilder.Entity("Palestras.Domain.Models.Palestra", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("Id");
 
-                    b.Property<DateTime>("BirthDate");
+                    b.Property<DateTime>("Data");
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("varchar(100)")
+                        .HasMaxLength(11);
 
-                    b.Property<string>("Titulo");
+                    b.Property<Guid>("PalestranteId");
+
+                    b.Property<string>("Titulo")
+                        .IsRequired()
+                        .HasColumnType("varchar(100)")
+                        .HasMaxLength(100);
 
                     b.HasKey("Id");
+
+                    b.HasIndex("PalestranteId");
 
                     b.ToTable("Palestras");
                 });
@@ -40,21 +51,26 @@ namespace Palestras.Infra.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnName("Id");
 
-                    b.Property<DateTime>("BirthDate");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("varchar(100)")
-                        .HasMaxLength(11);
+                    b.Property<string>("MiniBio");
 
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(100);
 
+                    b.Property<string>("Url");
+
                     b.HasKey("Id");
 
                     b.ToTable("Palestrantes");
+                });
+
+            modelBuilder.Entity("Palestras.Domain.Models.Palestra", b =>
+                {
+                    b.HasOne("Palestras.Domain.Models.Palestrante", "Palestrante")
+                        .WithMany("Palestras")
+                        .HasForeignKey("PalestranteId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

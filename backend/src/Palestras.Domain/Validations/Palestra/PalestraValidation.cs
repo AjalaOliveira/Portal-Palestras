@@ -9,23 +9,23 @@ namespace Palestras.Domain.Validations.Palestra
         protected void ValidaTitulo()
         {
             RuleFor(c => c.Titulo)
-                .NotEmpty().WithMessage("Por favor, verifique se você digitou o nome")
-                .Length(2, 150).WithMessage("O nome deve ter entre 2 e 150 caracteres");
+                .NotEmpty().WithMessage("Por favor, verifique se você digitou o titulo")
+                .Length(2, 150).WithMessage("O titulo deve ter entre 2 e 150 caracteres");
         }
 
-        protected void ValidateBirthDate()
+        protected void ValidateData()
         {
-            RuleFor(c => c.BirthDate)
+            RuleFor(c => c.Data)
                 .NotEmpty()
-                .Must(HaveMinimumAge)
-                .WithMessage("A Palestra deve ter 18 anos ou mais");
+                .Must(EhValida)
+                .WithMessage("A Palestra deve ter a data de hoje ou data futura.");
         }
 
-        protected void ValidateEmail()
+        protected void ValidateDescricao()
         {
-            RuleFor(c => c.Email)
-                .NotEmpty()
-                .EmailAddress();
+            RuleFor(c => c.Descricao)
+                .NotEmpty().WithMessage("Por favor, verifique se você digitou a descrição")
+                .Length(2, 150).WithMessage("A descrição deve ter entre 2 e 150 caracteres");
         }
 
         protected void ValidateId()
@@ -34,9 +34,15 @@ namespace Palestras.Domain.Validations.Palestra
                 .NotEqual(Guid.Empty);
         }
 
-        protected static bool HaveMinimumAge(DateTime birthDate)
+        protected void ValidateIdPalestrante()
         {
-            return birthDate <= DateTime.Now.AddYears(-18);
+            RuleFor(c => c.PalestranteId)
+                .NotEqual(Guid.Empty);
+        }
+
+        protected static bool EhValida(DateTime data)
+        {
+            return data >= DateTime.Now.Date;
         }
     }
 }

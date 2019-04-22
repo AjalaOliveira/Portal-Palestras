@@ -5,12 +5,13 @@ namespace Palestras.Domain.Events.Palestra
 {
     public class PalestraUpdatedEvent : Event
     {
-        public PalestraUpdatedEvent(Guid id, string titulo, string email, DateTime birthDate)
+        public PalestraUpdatedEvent(Guid id, string titulo, string descricao, DateTime data, Guid palestranteId)
         {
             Id = id;
             Titulo = titulo;
-            Email = email;
-            BirthDate = birthDate;
+            Descricao = descricao;
+            Data = data;
+            PalestranteId = palestranteId;
             AggregateId = id;
         }
 
@@ -18,8 +19,10 @@ namespace Palestras.Domain.Events.Palestra
 
         public string Titulo { get; private set; }
 
-        public string Email { get; private set; }
+        public string Descricao { get; private set; }
 
-        public DateTime BirthDate { get; private set; }
+        public DateTime Data { get; private set; }
+
+        public Guid PalestranteId { get; set; }
     }
 }

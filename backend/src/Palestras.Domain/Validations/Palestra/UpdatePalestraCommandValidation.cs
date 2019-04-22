@@ -8,8 +8,9 @@ namespace Palestras.Domain.Validations.Palestra
         {
             ValidateId();
             ValidaTitulo();
-            ValidateBirthDate();
-            ValidateEmail();
+            ValidateData();
+            ValidateDescricao();
+            ValidateIdPalestrante();
         }
     }
 }
