@@ -5,6 +5,6 @@ namespace Palestras.Domain.Interfaces
 {
     public interface IPalestraRepository : IRepository<Palestra>
     {
-        Palestra GetByDescricao(string titulo);
+        Palestra GetByTitulo(string titulo);
     }
 }

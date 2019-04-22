@@ -20,5 +20,11 @@ namespace Palestras.Infra.Data.Repository
                 .Include(c => c.Palestrante)
                 .FirstOrDefault();
         }
+
+        public Palestrante GetByNome(string nome)
+        {
+            return DbSet.AsNoTracking()
+                .FirstOrDefault(c => c.Nome == nome);
+        }
     }
 }

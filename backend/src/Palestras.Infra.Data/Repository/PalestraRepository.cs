@@ -14,11 +14,10 @@ namespace Palestras.Infra.Data.Repository
         {
         }
 
-        public Palestra GetByDescricao(string descricao)
+        public Palestra GetByTitulo(string titulo)
         {
-
             return DbSet.AsNoTracking()
-                .FirstOrDefault(c => c.Descricao == descricao);
+                .FirstOrDefault(c => c.Titulo == titulo);
         }
 
         public override Palestra GetById(Guid id)

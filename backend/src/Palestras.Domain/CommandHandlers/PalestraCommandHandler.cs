@@ -38,12 +38,12 @@ namespace Palestras.Domain.CommandHandlers
 
             var palestra = new Palestra(Guid.NewGuid(), message.Titulo, message.Descricao, message.Data, message.PalestranteId);
 
-            var existingDescricao = _palestraRepository.GetByDescricao(palestra.Descricao);
+            var existingPalestra = _palestraRepository.GetByTitulo(palestra.Titulo);
 
-            if (existingDescricao != null && existingDescricao.Id != palestra.Id)
-                if (!existingDescricao.Equals(palestra))
+            if (existingPalestra != null && existingPalestra.Id != palestra.Id)
+                if (!existingPalestra.Equals(palestra))
                 {
-                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "Registro duplicado!."));
+                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "Palestra já cadastrada!"));
                     return Task.CompletedTask;
                 }
 
@@ -78,12 +78,12 @@ namespace Palestras.Domain.CommandHandlers
             }
 
             var palestra = new Palestra(message.Id, message.Titulo, message.Descricao, message.Data, message.PalestranteId);
-            var existingPalestra = _palestraRepository.GetByDescricao(palestra.Descricao);
+            var existingPalestra = _palestraRepository.GetByTitulo(palestra.Titulo);
 
             if (existingPalestra != null && existingPalestra.Id != palestra.Id)
-                if (!existingPalestra.Equals(palestra))
+                if (existingPalestra.Id != palestra.Id)
                 {
-                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "Tente novamente!."));
+                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "Palestra já cadastrada!"));
                     return Task.CompletedTask;
                 }
 
