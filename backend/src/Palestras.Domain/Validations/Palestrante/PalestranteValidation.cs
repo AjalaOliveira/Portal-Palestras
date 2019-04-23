@@ -26,6 +26,13 @@ namespace Palestras.Domain.Validations.Palestrante
                 .NotEqual(Guid.Empty);
         }
 
+        protected void ValidateUrl()
+        {
+            RuleFor(c => c.Url)
+                .NotEmpty().WithMessage("Por favor, verifique se você digitou a URL");
+
+        }
+
         protected static bool HaveMinimumAge(DateTime miniBio)
         {
             return miniBio <= DateTime.Now.AddYears(-18);

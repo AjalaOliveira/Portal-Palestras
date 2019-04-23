@@ -75,8 +75,7 @@ namespace Palestras.WebApi
                     Contact = new Contact
                     {
                         Name = "Ajala Oliveira",
-                        Email = "ajala_oliveira@yahoo.com.br",
-                        Url = ""
+                        Url = "https://www.linkedin.com/in/ajala-oliveira-85917442/"
                     },
                     License = new License
                     {

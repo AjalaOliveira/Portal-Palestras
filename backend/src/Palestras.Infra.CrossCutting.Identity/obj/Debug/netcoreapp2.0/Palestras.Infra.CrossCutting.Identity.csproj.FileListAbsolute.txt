@@ -34,3 +34,5 @@ C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\o
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.csproj.CopyComplete
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.dll
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.pdb
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.Properties.Resources.resources
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.csproj.GenerateResource.cache
