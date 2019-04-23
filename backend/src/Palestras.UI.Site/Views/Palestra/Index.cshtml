@@ -102,7 +102,7 @@
                 var palestraId = $(this).data('id');
                 $.ajax({
                     //url: "http://localhost:52346/palestra-management/palestra-history/" + palestraId,
-                    url: "https://palestraswebapi20190422101202.azurewebsites.net/api/v1.0/palestra-management/palestra-history/" + palestraId,
+                    url: "https://portal-palestras.azurewebsites.net/palestra-management/palestra-history/" + palestraId,
                     cache: false
                 }).done(function(data) {
                     var formatHtml = "<table class='table table-striped'>";
