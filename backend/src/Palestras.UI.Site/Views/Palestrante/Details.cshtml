@@ -7,7 +7,7 @@
 <h2>@ViewData["Title"]</h2>
 
 <div>
-    <hr/>
+    <hr />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Nome)
@@ -29,6 +29,46 @@
         </dd>
     </dl>
 </div>
+
+@if (Model.Palestras.Count > 0)
+{
+    <h4>Palestras</h4>
+    <div class="panel panel-default">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayName("Titulo")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Descrição")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Data")
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Palestras)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Titulo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Descricao)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Data)
+                        </td>
+                        <td></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Atualizar</a>
     <a asp-action="Index" class="btn btn-info">Voltar à lista</a>

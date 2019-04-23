@@ -37,34 +37,21 @@
             </div>
         </div>
 
-        @{
-            if (ViewBag.PalestranteId == null)
-            {
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <h4 class="text-danger">Necessário Cadastrar Palestrante</h4>
-                        <a asp-action="Index" class="btn btn-info">Voltar à lista</a>
-                    </div>
-                </div>
-            }
-            else
-            {
-                <div class="form-group">
-                    <label asp-for="PalestranteId" class="col-md-2 control-label"></label>
-                    <div class="col-md-10">
-                        <select asp-for="PalestranteId" asp-items="@ViewBag.PalestranteId" class="form-control">
-                            <span asp-validation-for="PalestranteId" class="text-danger"></span>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Cadastrar" class="btn btn-success" />
-                        <a asp-action="Index" class="btn btn-info">Voltar à lista</a>
-                    </div>
-                </div>
-            }
-        }
+        <div class="form-group">
+            <label asp-for="PalestranteId" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <select asp-for="PalestranteId" asp-items="@ViewBag.PalestranteId" class="form-control">
+                    <option>Selecione o palestrante</option>
+                </select>
+                <span asp-validation-for="PalestranteId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Cadastrar" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-info">Voltar à lista</a>
+            </div>
+        </div>
 
     </div>
 </form>

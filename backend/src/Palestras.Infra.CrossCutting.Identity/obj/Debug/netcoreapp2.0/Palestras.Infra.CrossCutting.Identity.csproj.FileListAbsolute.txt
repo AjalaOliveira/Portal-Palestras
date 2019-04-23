@@ -28,11 +28,11 @@ C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\b
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\bin\Debug\netcoreapp2.0\Palestras.Domain.Core.pdb
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\bin\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Bus.pdb
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.csprojAssemblyReference.cache
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.Properties.Resources.resources
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.csproj.GenerateResource.cache
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.csproj.CoreCompileInputs.cache
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.AssemblyInfoInputs.cache
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.AssemblyInfo.cs
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.csproj.CopyComplete
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.dll
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.pdb
-C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.Properties.Resources.resources
-C:\Projetos\Portal-Palestras\backend\src\Palestras.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.0\Palestras.Infra.CrossCutting.Identity.csproj.GenerateResource.cache

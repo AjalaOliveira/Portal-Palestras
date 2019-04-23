@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -12,11 +13,14 @@ namespace Palestras.UI.Site.Controllers
     public class PalestranteController : BaseController
     {
         private readonly IPalestranteAppService _palestranteAppService;
+        private readonly IPalestraAppService _palestraAppService;
 
         public PalestranteController(IPalestranteAppService palestranteAppService,
+            IPalestraAppService palestraAppService,
             INotificationHandler<DomainNotification> notifications) : base(notifications)
         {
             _palestranteAppService = palestranteAppService;
+            _palestraAppService = palestraAppService;
         }
 
         [HttpGet]
@@ -37,6 +41,8 @@ namespace Palestras.UI.Site.Controllers
             var palestranteViewModel = _palestranteAppService.GetById(id.Value);
 
             if (palestranteViewModel == null) return NotFound();
+
+            palestranteViewModel.Palestras = _palestraAppService.GetPalestrasByPalestranteId(id.Value).ToList();
 
             return View(palestranteViewModel);
         }

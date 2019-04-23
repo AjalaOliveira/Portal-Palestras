@@ -28,8 +28,8 @@ namespace Palestras.Application.ViewModels
 
         public virtual PalestranteViewModel Palestrante { get; set; }
 
-        [DisplayName("Palestrante")]
-        [Required(ErrorMessage = "O palestrante é obrigatório")]
+        [DisplayName("Palestrante")]        
+        [RegularExpression(@"^(\{){0,1}[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}(\}){0,1}$", ErrorMessage = "O palestrante é obrigatório")]
         public Guid PalestranteId { get; set; }
     }
 }

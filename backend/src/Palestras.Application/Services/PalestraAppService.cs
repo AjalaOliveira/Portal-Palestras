@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Palestras.Application.EventSourcedNormalizers;
@@ -61,6 +62,11 @@ namespace Palestras.Application.Services
         public IList<PalestraHistoryData> GetAllHistory(Guid id)
         {
             return PalestraHistory.ToJavaScriptPalestraHistory(_eventStoreRepository.All(id));
+        }
+
+        public IEnumerable<PalestraViewModel> GetPalestrasByPalestranteId(Guid paletranteId)
+        {
+            return _mapper.Map<IEnumerable<PalestraViewModel>>(_palestraRepository.GetPalestrasByPalestranteId(paletranteId));
         }
 
         public void Dispose()

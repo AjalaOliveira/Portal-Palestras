@@ -64,13 +64,13 @@ namespace Palestras.UI.Site.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(PalestraViewModel palestraViewModel)
         {
+            ViewBag.PalestranteId = new SelectList(_palestranteAppService.GetAll(), "Id", "Nome", palestraViewModel.PalestranteId);
+
             if (!ModelState.IsValid) return View(palestraViewModel);
             _palestraAppService.Register(palestraViewModel);
 
             if (IsValidOperation())
-                ViewBag.Sucesso = "Palestra Cadastrada!";
-
-            ViewBag.PalestranteId = new SelectList(_palestranteAppService.GetAll(), "Id", "Nome", palestraViewModel.PalestranteId);
+                ViewBag.Sucesso = "Palestra Cadastrada!";           
 
             return View(palestraViewModel);
         }
@@ -84,9 +84,9 @@ namespace Palestras.UI.Site.Controllers
 
             var palestraViewModel = _palestraAppService.GetById(id.Value);
 
-            if (palestraViewModel == null) return NotFound();
-
             ViewBag.PalestranteId = new SelectList(_palestranteAppService.GetAll(), "Id", "Nome", palestraViewModel.PalestranteId);
+
+            if (palestraViewModel == null) return NotFound();
 
             return View(palestraViewModel);
         }
@@ -97,14 +97,14 @@ namespace Palestras.UI.Site.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(PalestraViewModel palestraViewModel)
         {
+            ViewBag.PalestranteId = new SelectList(_palestranteAppService.GetAll(), "Id", "Nome", palestraViewModel.PalestranteId);
+
             if (!ModelState.IsValid) return View(palestraViewModel);
 
             _palestraAppService.Update(palestraViewModel);
 
             if (IsValidOperation())
                 ViewBag.Sucesso = "Palestra Atualizada!";
-
-            ViewBag.PalestranteId = new SelectList(_palestranteAppService.GetAll(), "Id", "Nome", palestraViewModel.PalestranteId);
 
             return View(palestraViewModel);
         }

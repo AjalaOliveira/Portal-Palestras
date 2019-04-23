@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Palestras.Domain.Interfaces;
@@ -25,6 +26,13 @@ namespace Palestras.Infra.Data.Repository
             return Db.Palestras.Where(c => c.Id == id)
                 .Include(c => c.Palestrante)
                 .FirstOrDefault();
+        }
+
+        public IEnumerable<Palestra> GetPalestrasByPalestranteId(Guid paletranteId)
+        {
+            return Db.Palestras
+                .Where(c => c.PalestranteId == paletranteId)
+                .ToList();
         }
     }
 }

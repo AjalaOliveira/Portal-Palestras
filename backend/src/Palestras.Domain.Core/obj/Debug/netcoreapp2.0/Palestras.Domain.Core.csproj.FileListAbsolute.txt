@@ -9,6 +9,7 @@ C:\Projetos\Template .NET MVC Core - DDD - Copia\Template\src\Palestras.Domain.C
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\bin\Debug\netcoreapp2.0\Palestras.Domain.Core.deps.json
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\bin\Debug\netcoreapp2.0\Palestras.Domain.Core.dll
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\bin\Debug\netcoreapp2.0\Palestras.Domain.Core.pdb
+C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\obj\Debug\netcoreapp2.0\Palestras.Domain.Core.csprojAssemblyReference.cache
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\obj\Debug\netcoreapp2.0\Palestras.Domain.Core.csproj.CoreCompileInputs.cache
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\obj\Debug\netcoreapp2.0\Palestras.Domain.Core.AssemblyInfoInputs.cache
 C:\Projetos\Portal-Palestras\backend\src\Palestras.Domain.Core\obj\Debug\netcoreapp2.0\Palestras.Domain.Core.AssemblyInfo.cs
