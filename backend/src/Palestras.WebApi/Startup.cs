@@ -59,9 +59,9 @@ namespace Palestras.WebApi
                     policy => policy.Requirements.Add(new ClaimRequirement("Palestrantes", "Write")));
                 options.AddPolicy("CanRemovePalestranteData",
                     policy => policy.Requirements.Add(new ClaimRequirement("Palestrantes", "Remove")));
-                options.AddPolicy("CanWritePalestrasData",
+                options.AddPolicy("CanWritePalestraData",
                     policy => policy.Requirements.Add(new ClaimRequirement("Palestras", "Write")));
-                options.AddPolicy("CanRemovePalestrasData",
+                options.AddPolicy("CanRemovePalestraData",
                     policy => policy.Requirements.Add(new ClaimRequirement("Palestras", "Remove")));
             });
 
@@ -90,6 +90,9 @@ namespace Palestras.WebApi
 
             // .NET Native DI Abstraction
             RegisterServices(services);
+
+            services.AddMvc()
+                .AddJsonOptions(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
