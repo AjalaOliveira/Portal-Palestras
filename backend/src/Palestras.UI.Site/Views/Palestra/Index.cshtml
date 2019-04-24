@@ -7,7 +7,7 @@
 <div>
     <h2>@ViewData["Title"]</h2>
 </div>
-<hr/>
+<hr />
 
 <div class="row">
     <div class="col-md-12">
@@ -20,57 +20,57 @@
         </div>
     </div>
 </div>
-<br/>
+<br />
 
 <div class="panel panel-default">
     <table class="table table-striped">
         <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Titulo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Data)
-            </th>
-            <th></th>
-        </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Titulo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descricao)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Data)
+                </th>
+                <th></th>
+            </tr>
         </thead>
         <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Titulo)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Descricao)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Data)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id" title="Atualizar" class="btn btn-warning">
-                        <span class="glyphicon glyphicon-pencil"></span>
-                    </a>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Titulo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descricao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Data)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id" title="Atualizar" class="btn btn-warning">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </a>
 
-                    <a asp-action="Details" asp-route-id="@item.Id" title="Detalhes" class="btn btn-primary">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </a>
+                        <a asp-action="Details" asp-route-id="@item.Id" title="Detalhes" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </a>
 
-                    <a asp-action="Delete" asp-route-id="@item.Id" title="Excluir" class="btn btn-danger">
-                        <span class="glyphicon glyphicon-trash"></span>
-                    </a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" title="Excluir" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </a>
 
-                    <button type="button" class="btn btn-purple viewbutton" title="Hist�rico" data-id="@item.Id" data-toggle="modal" data-target="#palestraHistory">
-                        <span class="glyphicon glyphicon-time"></span>
-                    </button>
+                        <button type="button" class="btn btn-purple viewbutton" title="Hist�rico" data-id="@item.Id" data-toggle="modal" data-target="#palestraHistory">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </button>
 
-                </td>
-            </tr>
-        }
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>
@@ -95,16 +95,17 @@
 </div>
 
 @section scripts
-{
+    {
     <script type="text/javascript">
         $(".viewbutton").on("click",
-            function() {
+            function () {
                 var palestraId = $(this).data('id');
                 $.ajax({
-                    url: "http://localhost:52346/palestra-management/palestra-history/" + palestraId,
+                    //url: "http://localhost:52346/palestra-management/palestra-history/" + palestraId,
                     //url: "https://portal-palestras.azurewebsites.net/palestra-management/palestra-history/" + palestraId,
+                    url: "https://palestraswebapi20190422101202.azurewebsites.net/api/v1/palestra-management" + palestraId,
                     cache: false
-                }).done(function(data) {
+                }).done(function (data) {
                     var formatHtml = "<table class='table table-striped'>";
                     formatHtml +=
                         "<thead><th>Ação</th><th>Quando</th><th>Id</th><th>Titulo</th><th>Descrição</th><th>Data</th><th>Usuário</th></thead>";
