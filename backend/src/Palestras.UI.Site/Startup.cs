@@ -61,10 +61,14 @@ namespace Palestras.UI.Site
                     policy => policy.Requirements.Add(new ClaimRequirement("Palestrantes", "Write")));
                 options.AddPolicy("CanRemovePalestranteData",
                     policy => policy.Requirements.Add(new ClaimRequirement("Palestrantes", "Remove")));
+                options.AddPolicy("CanReadPalestranteData",
+                    policy => policy.Requirements.Add(new ClaimRequirement("Palestrantes", "Read")));
                 options.AddPolicy("CanWritePalestraData",
                     policy => policy.Requirements.Add(new ClaimRequirement("Palestras", "Write")));
                 options.AddPolicy("CanRemovePalestraData",
                     policy => policy.Requirements.Add(new ClaimRequirement("Palestras", "Remove")));
+                options.AddPolicy("CanReadPalestraData",
+                    policy => policy.Requirements.Add(new ClaimRequirement("Palestras", "Read")));
             });
 
             // Adding MediatR for Domain Events and Notifications

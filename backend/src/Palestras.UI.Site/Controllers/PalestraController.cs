@@ -27,7 +27,7 @@ namespace Palestras.UI.Site.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
+        [Authorize(Policy = "CanReadPalestraData")]
         [Route("palestra-management/list-all")]
         public IActionResult Index()
         {
@@ -35,7 +35,7 @@ namespace Palestras.UI.Site.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
+        [Authorize(Policy = "CanReadPalestraData")]
         [Route("palestra-management/palestra-details/{id:guid}")]
         public IActionResult Details(Guid? id)
         {
@@ -138,7 +138,7 @@ namespace Palestras.UI.Site.Controllers
             return RedirectToAction("Index");
         }
 
-        [AllowAnonymous]
+        [Authorize(Policy = "CanReadPalestraData")]
         [Route("palestra-management/palestra-history/{id:guid}")]
         public JsonResult History(Guid id)
         {
@@ -147,7 +147,7 @@ namespace Palestras.UI.Site.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
+        [Authorize(Policy = "CanReadPalestraData")]
         [Route("palestra-management/search-data")]
         public IActionResult SearchByDate()
         {
@@ -155,7 +155,7 @@ namespace Palestras.UI.Site.Controllers
         }
 
         [HttpPost]
-        [AllowAnonymous]
+        [Authorize(Policy = "CanReadPalestraData")]
         [Route("palestra-management/search-data")]
         public IActionResult SearchByDate(SearchByDateViewModel model)
         {           

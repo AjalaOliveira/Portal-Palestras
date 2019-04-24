@@ -24,7 +24,7 @@ namespace Palestras.UI.Site.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
+        [Authorize(Policy = "CanReadPalestranteData")]
         [Route("palestrante-management/list-all")]
         public IActionResult Index()
         {
@@ -32,7 +32,7 @@ namespace Palestras.UI.Site.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
+        [Authorize(Policy = "CanReadPalestranteData")]
         [Route("palestrante-management/palestrante-details/{id:guid}")]
         public IActionResult Details(Guid? id)
         {
@@ -129,7 +129,7 @@ namespace Palestras.UI.Site.Controllers
             return RedirectToAction("Index");
         }
 
-        [AllowAnonymous]
+        [Authorize(Policy = "CanReadPalestranteData")]
         [Route("palestrante-management/palestrante-history/{id:guid}")]
         public JsonResult History(Guid id)
         {
