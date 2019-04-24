@@ -8,5 +8,6 @@ namespace Palestras.Domain.Interfaces
     {
         Palestra GetByTitulo(string titulo);
         IEnumerable<Palestra> GetPalestrasByPalestranteId(Guid paletranteId);
+        IEnumerable<Palestra> SearchByDate(DateTime data);
     }
 }

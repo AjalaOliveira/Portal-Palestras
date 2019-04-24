@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -28,6 +29,7 @@ namespace Palestras.Application.ViewModels
         [DisplayName("URL")]
         public string Url { get; set; }
 
+        [JsonIgnore]
         public virtual ICollection<PalestraViewModel> Palestras { get; set; }
     }
 }

@@ -34,5 +34,11 @@ namespace Palestras.Infra.Data.Repository
                 .Where(c => c.PalestranteId == paletranteId)
                 .ToList();
         }
+
+        public IEnumerable<Palestra> SearchByDate(DateTime data)
+        {
+            return Db.Palestras.Include(c => c.Palestrante)
+                .Where(c => c.Data == data).ToList();
+        }
     }
 }

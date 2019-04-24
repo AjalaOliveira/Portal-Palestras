@@ -145,5 +145,21 @@ namespace Palestras.UI.Site.Controllers
             var palestraHistoryData = _palestraAppService.GetAllHistory(id);
             return Json(palestraHistoryData);
         }
+
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("palestra-management/search-data")]
+        public IActionResult SearchByDate()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [Route("palestra-management/search-data")]
+        public IActionResult SearchByDate(SearchByDateViewModel model)
+        {           
+           return View(new SearchByDateViewModel(model.Data, _palestraAppService.SearchByDate(model.Data)));
+        }
     }
 }

@@ -54,9 +54,6 @@ namespace Palestras.UI.Site
             services.AddAutoMapperSetup();
             services.AddMvc();
 
-            services.AddMvc()
-                .AddJsonOptions(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
-
             //Claims - AddPolicy
             services.AddAuthorization(options =>
             {

@@ -90,5 +90,14 @@ namespace Palestras.WebApi.Controllers
             var palestraHistoryData = _palestraAppService.GetAllHistory(id);
             return Response(palestraHistoryData);
         }
+
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("palestra-management/search-data/{data:datetime}")]
+        public IActionResult SearchByDate(DateTime data)
+        {
+            var palestraSearchByData = _palestraAppService.SearchByDate(data);
+            return Response(palestraSearchByData);
+        }
     }
 }

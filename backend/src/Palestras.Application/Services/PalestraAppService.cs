@@ -69,6 +69,11 @@ namespace Palestras.Application.Services
             return _mapper.Map<IEnumerable<PalestraViewModel>>(_palestraRepository.GetPalestrasByPalestranteId(paletranteId));
         }
 
+        public IEnumerable<PalestraViewModel> SearchByDate(DateTime data)
+        {
+            return _mapper.Map<IEnumerable<PalestraViewModel>>(_palestraRepository.SearchByDate(data));
+        }
+
         public void Dispose()
         {
             GC.SuppressFinalize(this);
