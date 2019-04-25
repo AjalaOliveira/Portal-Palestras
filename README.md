@@ -1,30 +1,13 @@
 # Portal-Palestras
 
-1////
-This application uses a instance of (localdb)\mssqllocaldb server.
-For run using another DATA SOURCE it's necessary change it on following files:
-  * Palestras.UI.Site\appsettings.json
-  * Palestras.WebApi\appsettings.json
-  * Palestras.Infra.Data\appsettings.json
-  * Palestras.Infra.CrossCutting.Identity\appsettings.json
+- Clone Repository from: https://github.com/AjalaOliveira/Portal-Palestras.git
+- Run 'dotnet restore' command in terminal
+- Run 'dotnet build 'command in terminal
+- For testing Web Application open 'Palestras.UI.Site' in terminal and run 'dotnet run command'
+- For testing Web API open 'Palestras.WebApi' in terminal and run 'dotnet run command'
 
-2////
-After to define the DATA SOURCE it's necessary run Migration commands.
+Environment tests:
+	- Web Application: https://portal-palestras.azurewebsites.net/account/login
+	- Web API: https://palestraswebapi20190422101202.azurewebsites.net/swagger/
 
-*** MIGRATION ***
-USE DATA BASE FIRST:
-
-Run te following commands by Packge Management Console from Visual Studio.
-
-Project: 
-* Palestras.Infra.CrossCutting.Identity
-
-Commands: 
-* update-database -Context IdentityDbContext
-
-Project: 
-* Palestras.Infra.Data
-
-Commands: 
-* update-database -Context PalestrasDbContext
-* update-database -Context EventStoreSQLContext
+Ajala Oliveira - https://www.linkedin.com/in/ajala-oliveira-85917442/ 
