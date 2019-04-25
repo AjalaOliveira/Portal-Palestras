@@ -101,8 +101,7 @@
             function() {
                 var palestranteId = $(this).data('id');
                 $.ajax({
-                    url: "http://localhost:52346/palestrante-management/palestrante-history/" + palestranteId,
-                    //url: "https://portal-palestras.azurewebsites.net/palestrante-management/palestrante-history/" + palestranteId,
+                    url: "https://portal-palestras.azurewebsites.net/palestrante-management/history/" + palestranteId,
                     cache: false
                 }).done(function(data) {
                     var formatHtml = "<table class='table table-striped'>";
