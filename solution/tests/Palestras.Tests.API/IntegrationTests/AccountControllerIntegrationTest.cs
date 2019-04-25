@@ -17,6 +17,8 @@ namespace Palestras.Tests.API.IntegrationTests
             Environment.CreateServer();
         }
 
+
+        //Integration test - Web API -> CrossCutting Layer
         [Fact]
         public async Task AccountController_LoginUser_ReturnSuccess()
         {

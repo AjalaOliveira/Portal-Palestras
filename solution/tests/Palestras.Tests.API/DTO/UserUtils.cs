@@ -13,8 +13,8 @@ namespace Palestras.Tests.API.DTO
         {
             var user = new LoginViewModel
             {
-                Email = "ajala_oliveira@yahoo.com.br",
-                Password = "@Ainter10"
+                Email = "cadastro@palestrantes.com",
+                Password = "@10Palestras"
             };
 
             var postContent = new StringContent(JsonConvert.SerializeObject(user),Encoding.UTF8,"application/json");
