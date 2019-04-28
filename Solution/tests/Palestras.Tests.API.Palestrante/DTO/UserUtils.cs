@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Palestras.Tests.API.DTO
+namespace Palestras.Tests.API.Palestrante.DTO
 {
     public class UserUtils
     {

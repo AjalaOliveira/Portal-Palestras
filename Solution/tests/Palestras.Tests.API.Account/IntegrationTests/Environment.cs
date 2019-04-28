@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.TestHost;
 using Palestras.WebApi;
 using System.Net.Http;
 
-namespace Palestras.Tests.API.IntegrationTests
+namespace Palestras.Tests.API.Account.IntegrationTests
 {
     public class Environment
     {

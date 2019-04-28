@@ -1,14 +1,12 @@
 ﻿using Newtonsoft.Json;
 using Palestras.Infra.CrossCutting.Identity.Models.AccountViewModels;
-using Palestras.Tests.API.DTO;
-using System;
-using System.Collections.Generic;
+using Palestras.Tests.API.Account.DTO;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Palestras.Tests.API.IntegrationTests
+namespace Palestras.Tests.API.Account.IntegrationTests
 {
     public class AccountControllerIntegrationTest
     {
@@ -17,8 +15,6 @@ namespace Palestras.Tests.API.IntegrationTests
             Environment.CreateServer();
         }
 
-
-        //Integration test - Web API -> CrossCutting Layer
         [Fact]
         public async Task AccountController_LoginUser_ReturnSuccess()
         {

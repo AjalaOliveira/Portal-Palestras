@@ -259,3 +259,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Solution/src/Palestras.UI.Site/Properties/PublishProfiles/Portal-Palestras - Web Deploy.pubxml
+/Solution/src/Palestras.WebApi/Properties/PublishProfiles/PalestrasWebApi20190422101202 - Web Deploy.pubxml

@@ -1,13 +1,13 @@
 ﻿using Newtonsoft.Json;
 using Palestras.Application.ViewModels;
-using Palestras.Tests.API.DTO;
+using Palestras.Tests.API.Palestrante.DTO;
 using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Palestras.Tests.API.IntegrationTests
+namespace Palestras.Tests.API.Palestrante.IntegrationTests
 {
     public class PalestrantesControllerIntegrationTest
     {
@@ -25,7 +25,7 @@ namespace Palestras.Tests.API.IntegrationTests
             var palestrante = new PalestranteViewModel
             {
                 Id = Guid.Parse("108E5C22-3D7B-4CBE-9BA8-4F257A6C4652"),
-                Nome = "USADO PELO TESTE DE INTEGRAÇÃO",
+                Nome = "USADO PELO TESTE DE INTEGRAÇÃO EM: " + DateTime.Now + ".",
                 MiniBio = "*** NÃO REMOVER ***",
                 Url = "http://www.teste-integracao-api.com/"
             };
@@ -35,9 +35,8 @@ namespace Palestras.Tests.API.IntegrationTests
                 Encoding.UTF8,
                 "application/json");
 
-            var response = await Environment.Client.PutAsync("api/v1/palestrante-management", postContent);
-
             // Act
+            var response = await Environment.Client.PutAsync("api/v1/palestrante-management", postContent);
             var userResult = JsonConvert.DeserializeObject<PalestranteJsonDTO>(await response.Content.ReadAsStringAsync());
 
             // Assert

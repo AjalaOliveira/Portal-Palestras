@@ -77,3 +77,9 @@
         }
     </div>
 }
+@if (Model != null && Model.PalestraPalestranteViewModel.Count() == 0)
+{
+    <div>
+        <h4>Nenhuma Palestra cadastrada nesse dia!</h4>
+    </div>
+}

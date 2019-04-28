@@ -1,5 +1,5 @@
 ﻿
-namespace Palestras.Tests.API.DTO
+namespace Palestras.Tests.API.Palestrante.DTO
 {
     public class UserJsonDTO
     {

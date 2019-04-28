@@ -2,16 +2,13 @@
 using Moq;
 using Palestras.Application.Interfaces;
 using Palestras.Application.ViewModels;
-using Palestras.Domain.Commands.Palestrante;
 using Palestras.Domain.Core.Bus;
 using Palestras.Domain.Core.Notifications;
 using Palestras.WebApi.Controllers;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
-namespace Palestras.Tests.API.UnitTests
+namespace Palestras.Tests.Domain.UnitTests
 {
     public class PalestranteControllerTests
     {
@@ -30,6 +27,7 @@ namespace Palestras.Tests.API.UnitTests
         {
             // Arrange
             var mockIPalestranteAppService = new Mock<IPalestranteAppService>();
+            var mockIPalestraAppService = new Mock<IPalestraAppService>();
             var mockNotification = new Mock<DomainNotificationHandler>();
             var mockIMediatorHandler = new Mock<IMediatorHandler>();
 
@@ -39,6 +37,7 @@ namespace Palestras.Tests.API.UnitTests
 
             var palestranteController = new PalestranteController(
                 mockIPalestranteAppService.Object,
+                mockIPalestraAppService.Object,
                 mockNotification.Object,
                 mockIMediatorHandler.Object);
 
@@ -55,6 +54,7 @@ namespace Palestras.Tests.API.UnitTests
         {
             // Arrange
             var mockIPalestranteAppService = new Mock<IPalestranteAppService>();
+            var mockIPalestraAppService = new Mock<IPalestraAppService>();
             var mockNotification = new Mock<DomainNotificationHandler>();
             var mockIMediatorHandler = new Mock<IMediatorHandler>();
 
@@ -65,6 +65,7 @@ namespace Palestras.Tests.API.UnitTests
 
             var palestranteController = new PalestranteController(
                 mockIPalestranteAppService.Object,
+                mockIPalestraAppService.Object,
                 mockNotification.Object,
                 mockIMediatorHandler.Object);
 
@@ -83,6 +84,7 @@ namespace Palestras.Tests.API.UnitTests
         {
             // Arrange
             var mockIPalestranteAppService = new Mock<IPalestranteAppService>();
+            var mockIPalestraAppService = new Mock<IPalestraAppService>();
             var mockNotification = new Mock<DomainNotificationHandler>();
             var mockIMediatorHandler = new Mock<IMediatorHandler>();
 
@@ -92,6 +94,7 @@ namespace Palestras.Tests.API.UnitTests
 
             var palestranteController = new PalestranteController(
                 mockIPalestranteAppService.Object,
+                mockIPalestraAppService.Object,
                 mockNotification.Object,
                 mockIMediatorHandler.Object);
 
