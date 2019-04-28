@@ -38,13 +38,13 @@ namespace Palestras.UI.Site.Controllers
         {
             if (id == null) return NotFound();
 
-            var palestranteViewModel = _palestranteAppService.GetById(id.Value);
+            var model = new PalestrantePalestrasViewModel(_palestranteAppService.GetById(id.Value));
 
-            if (palestranteViewModel == null) return NotFound();
+            if (model == null) return NotFound();
 
-            palestranteViewModel.Palestras = _palestraAppService.GetPalestrasByPalestranteId(id.Value).ToList();
+            model.Palestras = _palestraAppService.GetPalestrasByPalestranteId(id.Value).ToList();
 
-            return View(palestranteViewModel);
+            return View(model);
         }
 
         [HttpGet]

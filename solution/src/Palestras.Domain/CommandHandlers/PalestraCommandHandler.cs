@@ -40,14 +40,13 @@ namespace Palestras.Domain.CommandHandlers
 
             var existingPalestra = _palestraRepository.GetByTitulo(palestra.Titulo);
 
-            if (existingPalestra != null && existingPalestra.Id != palestra.Id)
-                if (!existingPalestra.Equals(palestra))
-                {
-                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "Palestra já cadastrada!"));
-                    return Task.CompletedTask;
-                }
+            if (existingPalestra != null && existingPalestra.Id != palestra.Id && existingPalestra.Data == palestra.Data)
+            {
+                Bus.RaiseEvent(new DomainNotification(message.MessageType, "Palestra já cadastrada!"));
+                return Task.CompletedTask;
+            }
 				
-            var existingConflictPalestras = _palestraRepository.GetPalestrasEmConflito(message.Data, message.PalestranteId);
+            var existingConflictPalestras = _palestraRepository.GetConflitctPalestranteDate(message.Data, message.PalestranteId);
 
             if (existingConflictPalestras != null)
 			{
@@ -86,23 +85,23 @@ namespace Palestras.Domain.CommandHandlers
             }
 
             var palestra = new Palestra(message.Id, message.Titulo, message.Descricao, message.Data, message.PalestranteId);
+
             var existingPalestra = _palestraRepository.GetByTitulo(palestra.Titulo);
 
-            if (existingPalestra != null && existingPalestra.Id != palestra.Id)
-                if (existingPalestra.Id != palestra.Id)
-                {
-                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "Palestra já cadastrada!"));
-                    return Task.CompletedTask;
-                }
+            if (existingPalestra != null && existingPalestra.Id != palestra.Id && existingPalestra.Data == palestra.Data)
+            {
+                Bus.RaiseEvent(new DomainNotification(message.MessageType, "Palestra já cadastrada!"));
+                return Task.CompletedTask;
+            }
 
+            var existingConflictPalestras = _palestraRepository.GetConflitctPalestranteDate(message.Data, message.PalestranteId);
 
-            var existingConflictPalestras = _palestraRepository.GetPalestrasEmConflito(message.Data, message.PalestranteId);
-
-            if (existingConflictPalestras != null)
+            if (existingConflictPalestras != null && existingConflictPalestras.Id != palestra.Id)
             {
                 Bus.RaiseEvent(new DomainNotification(message.MessageType, "Palestrante já possui palestra para essa data!"));
                 return Task.CompletedTask;
             }
+
             _palestraRepository.Update(palestra);
 
             if (Commit()) Bus.RaiseEvent(new PalestraUpdatedEvent(palestra.Id, palestra.Titulo, palestra.Descricao, palestra.Data, palestra.PalestranteId));

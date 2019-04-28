@@ -67,5 +67,10 @@ namespace Palestras.Application.Services
         {
             GC.SuppressFinalize(this);
         }
+
+        public IEnumerable<PalestrantePalestrasViewModel> GetAllCompleteList()
+        {
+            return _mapper.Map<IEnumerable<PalestrantePalestrasViewModel>>(_palestranteRepository.GetAllCompleteList());
+        }        
     }
 }

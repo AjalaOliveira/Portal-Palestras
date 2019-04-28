@@ -14,6 +14,7 @@ namespace Palestras.Application.Interfaces
         void Remove(Guid id);
         IList<PalestraHistoryData> GetAllHistory(Guid id);
         IEnumerable<PalestraViewModel> GetPalestrasByPalestranteId(Guid paletranteId);
-        IEnumerable<PalestraViewModel> SearchByDate(DateTime data);
+        IEnumerable<PalestraPalestranteViewModel> SearchByDate(DateTime data);
+        IEnumerable<PalestraPalestranteViewModel> GetAllCompleteList();
     }
 }

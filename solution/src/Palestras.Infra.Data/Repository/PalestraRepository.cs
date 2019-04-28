@@ -41,10 +41,23 @@ namespace Palestras.Infra.Data.Repository
                 .Where(c => c.Data == data).ToList();
         }
 
-        public Palestra GetPalestrasEmConflito(DateTime data, Guid id)
+        public Palestra GetConflitctPalestranteDate(DateTime data, Guid id)
         {
             return Db.Palestras
                 .Where(c => c.Data == data && c.PalestranteId == id)
+                .SingleOrDefault();
+        }
+
+        public IEnumerable<Palestra> GetAllCompleteList()
+        {
+            return Db.Palestras
+                .Include(c => c.Palestrante).ToList();
+        }
+
+        public Palestra GetConflitctPalestranteTitulo(DateTime data, string titulo)
+        {
+            return Db.Palestras
+                .Where(c => c.Data == data && c.Titulo == titulo)
                 .SingleOrDefault();
         }
     }

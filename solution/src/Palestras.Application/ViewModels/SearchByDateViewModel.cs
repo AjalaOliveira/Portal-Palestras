@@ -13,10 +13,10 @@ namespace Palestras.Application.ViewModels
 
         }
 
-        public SearchByDateViewModel(DateTime data, IEnumerable<PalestraViewModel> palestraViewModel)
+        public SearchByDateViewModel(DateTime data, IEnumerable<PalestraPalestranteViewModel> palestraPalestranteViewModel)
         {
             Data = data;
-            PalestraViewModel = palestraViewModel;
+            PalestraPalestranteViewModel = palestraPalestranteViewModel;
         }
 
         [Required(ErrorMessage = "A data é obrigatória")]
@@ -25,6 +25,6 @@ namespace Palestras.Application.ViewModels
         [DisplayName("Data")]
         public DateTime Data { get; set; }
 
-        public IEnumerable<PalestraViewModel> PalestraViewModel { get; set; }
+        public IEnumerable<PalestraPalestranteViewModel> PalestraPalestranteViewModel { get; set; }
     }
 }

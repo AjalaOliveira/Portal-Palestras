@@ -13,5 +13,6 @@ namespace Palestras.Application.Interfaces
         void Update(PalestranteViewModel palestranteViewModel);
         void Remove(Guid id);
         IList<PalestranteHistoryData> GetAllHistory(Guid id);
+        IEnumerable<PalestrantePalestrasViewModel> GetAllCompleteList();
     }
 }

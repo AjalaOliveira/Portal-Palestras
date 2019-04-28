@@ -9,6 +9,8 @@ namespace Palestras.Domain.Interfaces
         Palestra GetByTitulo(string titulo);
         IEnumerable<Palestra> GetPalestrasByPalestranteId(Guid paletranteId);
         IEnumerable<Palestra> SearchByDate(DateTime data);
-        Palestra GetPalestrasEmConflito(DateTime data, Guid id);
+        Palestra GetConflitctPalestranteDate(DateTime data, Guid id);
+        IEnumerable<Palestra> GetAllCompleteList();
+        Palestra GetConflitctPalestranteTitulo(DateTime data, string titulo);
     }
 }

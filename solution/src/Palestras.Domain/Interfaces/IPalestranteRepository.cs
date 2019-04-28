@@ -1,5 +1,6 @@
 ﻿using Palestras.Domain.Models;
 using System;
+using System.Collections.Generic;
 
 namespace Palestras.Domain.Interfaces
 {
@@ -8,5 +9,7 @@ namespace Palestras.Domain.Interfaces
         Palestra GetByPalestranteId(Guid palestranteId);
 
         Palestrante GetByNome(string titulo);
+
+        IEnumerable<Palestrante> GetAllCompleteList();
     }
 }

@@ -1,4 +1,4 @@
-@model Palestras.Application.ViewModels.PalestranteViewModel
+@model Palestras.Application.ViewModels.PalestrantePalestrasViewModel
 
 @{
     ViewData["Title"] = "Detalhes do Palestrante";
@@ -30,7 +30,7 @@
     </dl>
 </div>
 
-@if (Model.Palestras.Count > 0)
+@if (Model.Palestras.Count() > 0)
 {
     <h4>Palestras</h4>
     <div class="panel panel-default">

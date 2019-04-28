@@ -40,13 +40,10 @@ namespace Palestras.Domain.CommandHandlers
 
             var existingpalestrante = _palestranteRepository.GetByNome(palestrante.Nome);
 
-            if (existingpalestrante != null && existingpalestrante.Id != palestrante.Id)
-                if (!existingpalestrante.Equals(palestrante))
-                {
+            if (existingpalestrante != null && existingpalestrante.Id != palestrante.Id) { 
                     Bus.RaiseEvent(new DomainNotification(message.MessageType, "Palestrante já cadastrado!"));
                     return Task.CompletedTask;
-                }
-
+             }
 
             _palestranteRepository.Add(palestrante);
 
@@ -80,14 +77,14 @@ namespace Palestras.Domain.CommandHandlers
             }
 
             var palestrante = new Palestrante(message.Id, message.Nome, message.MiniBio, message.Url);
+
             var existingpalestrante = _palestranteRepository.GetByNome(palestrante.Nome);
 
             if (existingpalestrante != null && existingpalestrante.Id != palestrante.Id)
-                if (existingpalestrante.Id != palestrante.Id)
-                {
-                    Bus.RaiseEvent(new DomainNotification(message.MessageType, "Palestrante já cadastrado!"));
-                    return Task.CompletedTask;
-                }
+            {
+                Bus.RaiseEvent(new DomainNotification(message.MessageType, "Palestrante já cadastrado!"));
+                return Task.CompletedTask;
+            }
 
             _palestranteRepository.Update(palestrante);
 

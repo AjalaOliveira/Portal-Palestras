@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -13,13 +14,16 @@ namespace Palestras.WebApi.Controllers
     public class PalestranteController : ApiController
     {
         private readonly IPalestranteAppService _palestranteAppService;
+        private readonly IPalestraAppService _palestraAppService;
 
         public PalestranteController(
             IPalestranteAppService palestranteAppService,
+            IPalestraAppService palestraAppService,
             INotificationHandler<DomainNotification> notifications,
             IMediatorHandler mediator) : base(notifications, mediator)
         {
             _palestranteAppService = palestranteAppService;
+            _palestraAppService = palestraAppService;
         }
 
         [HttpGet]
@@ -27,7 +31,7 @@ namespace Palestras.WebApi.Controllers
         [Route("palestrante-management")]
         public IActionResult Get()
         {
-            return Response(_palestranteAppService.GetAll());
+            return Response(_palestranteAppService.GetAllCompleteList());
         }
 
         [HttpGet]
@@ -35,9 +39,11 @@ namespace Palestras.WebApi.Controllers
         [Route("palestrante-management/{id:guid}")]
         public IActionResult Get(Guid id)
         {
-            var palestranteViewModel = _palestranteAppService.GetById(id);
+            var model = new PalestrantePalestrasViewModel(_palestranteAppService.GetById(id));
 
-            return Response(palestranteViewModel);
+            model.Palestras = _palestraAppService.GetPalestrasByPalestranteId(id).ToList();
+
+            return Response(model);
         }
 
         [HttpPost]

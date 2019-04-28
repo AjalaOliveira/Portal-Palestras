@@ -13,13 +13,16 @@ namespace Palestras.WebApi.Controllers
     public class PalestraController : ApiController
     {
         private readonly IPalestraAppService _palestraAppService;
+        private readonly IPalestranteAppService _palestranteAppService;
 
         public PalestraController(
             IPalestraAppService palestraAppService,
+            IPalestranteAppService palestranteAppService,
             INotificationHandler<DomainNotification> notifications,
             IMediatorHandler mediator) : base(notifications, mediator)
         {
             _palestraAppService = palestraAppService;
+            _palestranteAppService = palestranteAppService;
         }
 
         [HttpGet]
@@ -27,7 +30,7 @@ namespace Palestras.WebApi.Controllers
         [Route("palestra-management")]
         public IActionResult Get()
         {
-            return Response(_palestraAppService.GetAll());
+            return Response(_palestraAppService.GetAllCompleteList());
         }
 
         [HttpGet]
@@ -35,9 +38,10 @@ namespace Palestras.WebApi.Controllers
         [Route("palestra-management/{id:guid}")]
         public IActionResult Get(Guid id)
         {
-            var palestraViewModel = _palestraAppService.GetById(id);
+            var model = new PalestraPalestranteViewModel(_palestraAppService.GetById(id));
+            model.Palestrante = _palestranteAppService.GetById(model.PalestranteId);
 
-            return Response(palestraViewModel);
+            return Response(model);
         }
 
         [HttpPost]

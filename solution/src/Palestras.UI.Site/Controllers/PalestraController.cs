@@ -41,11 +41,13 @@ namespace Palestras.UI.Site.Controllers
         {
             if (id == null) return NotFound();
 
-            var palestraViewModel = _palestraAppService.GetById(id.Value);
+            var model = new PalestraPalestranteViewModel(_palestraAppService.GetById(id.Value));
+            
+            if (model== null) return NotFound();
 
-            if (palestraViewModel == null) return NotFound();
+            model.Palestrante = _palestranteAppService.GetById(model.PalestranteId);
 
-            return View(palestraViewModel);
+            return View(model);
         }
 
         [HttpGet]
@@ -116,11 +118,13 @@ namespace Palestras.UI.Site.Controllers
         {
             if (id == null) return NotFound();
 
-            var palestraViewModel = _palestraAppService.GetById(id.Value);
+            var model = new PalestraPalestranteViewModel(_palestraAppService.GetById(id.Value));
 
-            if (palestraViewModel == null) return NotFound();
+            if (model == null) return NotFound();
 
-            return View(palestraViewModel);
+            model.Palestrante = _palestranteAppService.GetById(model.PalestranteId);
+
+            return View(model);
         }
 
         [HttpPost]

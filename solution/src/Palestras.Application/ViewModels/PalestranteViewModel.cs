@@ -27,9 +27,6 @@ namespace Palestras.Application.ViewModels
         [MinLength(2)]
         [MaxLength(100)]
         [DisplayName("URL")]
-        public string Url { get; set; }
-
-        [JsonIgnore]
-        public virtual ICollection<PalestraViewModel> Palestras { get; set; }
+        public string Url { get; set; }      
     }
 }

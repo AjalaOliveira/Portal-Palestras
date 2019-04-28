@@ -69,14 +69,19 @@ namespace Palestras.Application.Services
             return _mapper.Map<IEnumerable<PalestraViewModel>>(_palestraRepository.GetPalestrasByPalestranteId(paletranteId));
         }
 
-        public IEnumerable<PalestraViewModel> SearchByDate(DateTime data)
+        public IEnumerable<PalestraPalestranteViewModel> SearchByDate(DateTime data)
         {
-            return _mapper.Map<IEnumerable<PalestraViewModel>>(_palestraRepository.SearchByDate(data));
+            return _mapper.Map<IEnumerable<PalestraPalestranteViewModel>>(_palestraRepository.SearchByDate(data));
         }
 
         public void Dispose()
         {
             GC.SuppressFinalize(this);
+        }
+
+        public IEnumerable<PalestraPalestranteViewModel> GetAllCompleteList()
+        {
+            return _mapper.Map<IEnumerable<PalestraPalestranteViewModel>>(_palestraRepository.GetAllCompleteList());
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Palestras.Domain.Interfaces;
@@ -25,6 +26,12 @@ namespace Palestras.Infra.Data.Repository
         {
             return DbSet.AsNoTracking()
                 .FirstOrDefault(c => c.Nome == nome);
+        }
+
+        public IEnumerable<Palestrante> GetAllCompleteList()
+        {
+            return Db.Palestrantes
+                .Include(c => c.Palestras).ToList();
         }
     }
 }
