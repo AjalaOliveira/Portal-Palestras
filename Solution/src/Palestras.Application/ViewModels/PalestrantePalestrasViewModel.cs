@@ -21,5 +21,6 @@ namespace Palestras.Application.ViewModels
         public string MiniBio { get; set; }
         public string Url { get; set; }
         public IEnumerable<PalestraViewModel> Palestras { get; set; }
+
     }
 }

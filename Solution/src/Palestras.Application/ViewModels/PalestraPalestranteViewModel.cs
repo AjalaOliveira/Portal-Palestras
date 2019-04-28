@@ -24,6 +24,7 @@ namespace Palestras.Application.ViewModels
         public DateTime Data { get; set; }
         [JsonIgnore]
         public Guid PalestranteId { get; set; }
-        public PalestranteViewModel Palestrante { get; set; }        
+        public PalestranteViewModel Palestrante { get; set; }
+        
     }
 }

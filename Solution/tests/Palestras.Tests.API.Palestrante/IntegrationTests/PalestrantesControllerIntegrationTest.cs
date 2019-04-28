@@ -24,7 +24,7 @@ namespace Palestras.Tests.API.Palestrante.IntegrationTests
 
             var palestrante = new PalestranteViewModel
             {
-                Id = Guid.Parse("108E5C22-3D7B-4CBE-9BA8-4F257A6C4652"),
+                Id = Guid.Parse("6C032503-A520-4CB3-8A38-12AEF7293CA1"),
                 Nome = "USADO PELO TESTE DE INTEGRAÇÃO EM: " + DateTime.Now + ".",
                 MiniBio = "*** NÃO REMOVER ***",
                 Url = "http://www.teste-integracao-api.com/"
